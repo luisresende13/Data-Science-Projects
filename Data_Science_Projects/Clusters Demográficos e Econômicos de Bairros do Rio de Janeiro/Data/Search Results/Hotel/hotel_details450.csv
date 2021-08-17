@@ -1,0 +1,451 @@
+,id,name,rating,likes.count,attributes.groups,hereNow.count,hereNow.summary
+0,5926e9f5c8772e605c4071ad,Casa Do Vizinho (403),,0,[],0,Nobody here
+0,4b05871ff964a520db8022e3,Sheraton Grand Rio Hotel & Resort,8.8,549,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4bf2eaca94af2d7f1ee73872,Leblon Spot Design Hostel,7.1,39,"['Reservations', 'Credit Cards', 'Wi-Fi', 'Menus', 'Drinks']",0,Nobody here
+0,4bcf4f870ffdce721861b2c0,Promenade Palladium,8.2,52,['Credit Cards'],0,Nobody here
+0,4e8941ed93ad855afd5ef29d,Hotel da Marinha,7.7,13,['Credit Cards'],0,Nobody here
+0,4e5aced71495a89112918a3f,Piscina,,24,['Credit Cards'],0,Nobody here
+0,52eed26a498e283edc834f32,The Hostel Rio de Janeiro,8.1,25,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4b65e91ff964a520c4072be3,Monsieur Leblond,,3,['Credit Cards'],0,Nobody here
+0,563a9360cd1097d2e59eb903,Gávea BNB,,1,[],0,Nobody here
+0,4dbcc06efa8cee727356e02e,Ville D'avigon,,0,['Credit Cards'],0,Nobody here
+0,4ff1f222e4b02acbcee38aa5,Mellow Yellow Mansion,,0,[],0,Nobody here
+0,4bd37f8c41b9ef3bc95d00e6,Leblon Spot,,0,[],0,Nobody here
+0,534ecd64498ed8d3a0684c3f,hotel sheraton,8.4,1,[],0,Nobody here
+0,4d74f5949b28224b4399dc0f,Sophie's Castle,,0,[],0,Nobody here
+0,539a160e498eab4891e749b6,Baobá B&B,,0,[],0,Nobody here
+0,4f6e57a0e4b0725b620ae39c,Toca da Morcega,,0,[],0,Nobody here
+0,5348cca9498eba6f43ca70da,Room 1825,,0,[],0,Nobody here
+0,519bde1f498e8a62fa1f2222,Room 1814 Sheraton,,0,[],0,Nobody here
+0,5183fa81498e392df152c731,Pousada Pesquisador,,0,['Credit Cards'],0,Nobody here
+0,5618e005498e16b9d3d731a7,Mirante da Floresta,8.3,12,[],0,Nobody here
+0,4e29ef45e4cd3bc16684948c,Ocean Leblon,,0,[],0,Nobody here
+0,4fa15ce2e4b0c33ec6ac4ce5,Recreio dos Anciãos,,0,[],0,Nobody here
+0,5643923338fa2ce64cf5cbc7,Rocinha Guest House,,1,[],0,Nobody here
+0,54173afe498ef98c2af5b0ae,Shine Spa @SheratonLeblon,,2,[],0,Nobody here
+0,4e69780d88772457c40a62e3,Fátima Macintyre Guesthouse,,1,[],0,Nobody here
+0,5a4399a66c08d1053566c5d0,Lobby,8.6,14,[],0,Nobody here
+0,58e7e4512a19825ba6444dc4,Pensão Dos Sciammarella,,0,[],0,Nobody here
+0,4bd77958304fce72b29b33ab,Boutique Hotel Gávea Tropical,,4,['Credit Cards'],0,Nobody here
+0,510945a719a9fd39a1684c1a,hotel nossa senhora da boa viagem,,1,[],0,Nobody here
+0,4db6ba3e4b226b343db9d04e,La Maison by Dussol,,5,[],0,Nobody here
+0,4d8d1c64c479a35d54902697,Vila Garibaldi,,1,[],0,Nobody here
+0,4e9108c8cc2127f5dace204f,Safari Hostel,,1,['Credit Cards'],0,Nobody here
+0,4f2c4f9ee4b0ecad92df7900,Leblon Ocean Hotel Residência,,3,[],0,Nobody here
+0,4da7a4eb04376c336875e753,The Claridge Residence Service,,1,[],0,Nobody here
+0,5d0bae21deb495002578bc4c,Brazilodge Leblon,,1,[],0,Nobody here
+0,52fa0a48498eb3704a16ce42,Pouso Verde,,2,['Credit Cards'],0,Nobody here
+0,55fb16fc498e58763d85d090,Studio Gávea,,0,[],0,Nobody here
+0,561f983e498e86e79e73a7b9,TopDogs Day Care,,0,[],0,Nobody here
+0,4b796aabf964a52073f82ee3,palladium hotel,,0,[],0,Nobody here
+0,500a0424e4b01d293b5e7873,bedandbreakfastleblon,,1,[],0,Nobody here
+0,5499e4e5498eaaf395181d74,Tuakaza,,1,[],0,Nobody here
+0,5202f55d498ebe0f19e858e0,Holliday Inn,,0,[],0,Nobody here
+0,4f771f27e4b0e91fa699d124,Motel Versailles,,0,['Credit Cards'],0,Nobody here
+0,5049f767e4b0a9ffde3daee4,Pousada Weekend,,0,[],0,Nobody here
+0,4ca222e37ada199c4d67b5bc,Corinto Hotel,7.8,27,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4f6010bee4b039b6753191f7,Vana Inn,,0,[],0,Nobody here
+0,530136e8498e54ed8111945c,House Of The Fantasy Island,,0,['Credit Cards'],0,Nobody here
+0,55fd89ef498ec525f4fc7a4e,Hostel Del Bosque,,1,[],0,Nobody here
+0,4e84397d722e7eac01182c69,"Av. 9 de Julho, 3597, Säo Paulo",,1,[],0,Nobody here
+0,5154fd2fe4b032661c096319,Motel Gaivota,,1,[],0,Nobody here
+0,4e8edb5e9adf0d7c3541cdc1,Diamond Hotel,,1,[],0,Nobody here
+0,51686babe4b0f67aa2de65dd,L' Amor Motel,,0,[],0,Nobody here
+0,5280f22f11d29ae9fe3538b1,Pensão do Luiz,,0,[],0,Nobody here
+0,4fc86c5fe4b08b8c9f0a47fc,ponto final 379 no catifi,,1,[],0,Nobody here
+0,519939ac498edf67bab0c5da,Motel Top kap,,1,[],0,Nobody here
+0,51993ace498e786c0f2e4185,Pops Motel,,0,['Credit Cards'],0,Nobody here
+0,530420dd498e6eea6f789fb5,Rua Pierre Curie,,3,['Credit Cards'],0,Nobody here
+0,4fc05d3ce4b0d6554a0486d7,New Star,,2,['Credit Cards'],0,Nobody here
+0,50dc61c3e4b094ae8c67534c,Bariloche,,2,['Credit Cards'],0,Nobody here
+0,50590822e4b052ecda7cb89e,Motel Palazzo,,2,['Credit Cards'],0,Nobody here
+0,501de9e6e4b0373b14830400,Pousada Maris Paraty,,1,[],0,Nobody here
+0,5027b381e4b05b9e0226da78,Cobertura Hotel Rios Presidente,,0,[],0,Nobody here
+0,4db44828fa8c350240e1582e,Four Seasons Residence Service,8.1,31,['Credit Cards'],0,Nobody here
+0,5d4f9f8ad16e2000084b39ad,Vogue Square Fashion Hotel,,2,[],0,Nobody here
+0,5cf30a5ac03635002cc05f0a,Wyndham Rio de Janeiro Barra Hotel,,1,[],0,Nobody here
+0,5669dee7498e0ceea18081f1,Piscina,,4,[],0,Nobody here
+0,576ac554498ed1433967a00f,"Vogue Square Hotel, BW Premier Collection",9.2,44,[],0,Nobody here
+0,51b33027498e4e9618adc382,Hilton,9.4,242,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,5139b724e4b0c2a7b804d4a4,Grand Hyatt Rio de Janeiro,9.2,192,"['Credit Cards', 'Wi-Fi']",1,One other person is here
+0,5a8fe92de0755052090303c2,Radisson Hotel Rio de Janeiro Barra,8.7,19,[],0,Nobody here
+0,579cd2ffcd102f2ed4a2921a,Ibiza Barra Hotel,,0,[],0,Nobody here
+0,5093c6dbe4b09d8b5daa0892,Barra Royal Plaza,7.0,7,[],0,Nobody here
+0,58e38967ef4694459eb090e5,Laghetto Stilo Barra Rio,6.8,6,[],0,Nobody here
+0,56e34351498ea4e7655cd2fb,Lobby,,0,[],0,Nobody here
+0,589fd717a36ecd09c402ff85,Piscina,,5,[],0,Nobody here
+0,576c43ff498e96ab7bf30fa7,LSH Barra Hotel,8.7,24,[],0,Nobody here
+0,59cdc7649ec3997d99c34784,Gran Nobile,6.6,10,['Wi-Fi'],0,Nobody here
+0,5b19ed012aff310039e9d34c,Suite 1610.1,,0,[],0,Nobody here
+0,5d057f972d2fd9002cb66cee,Beach House Hostel,,1,[],0,Nobody here
+0,50aa5158e4b0bb7b5c8243ee,Apart Hotel Marbella,,0,[],0,Nobody here
+0,570b021ccd108d96ade25089,Edifício Casa Del Mar Residence Service,,0,[],0,Nobody here
+0,5937b194f1fdaf456fca823a,Hostel Casa Do Mundo,,2,[],0,Nobody here
+0,4cbcfd6ac7228cfac56f27ce,Bourbon Barra Premium Residence,8.2,141,['Credit Cards'],0,Nobody here
+0,56b8e5d0498eac0c48cba6c6,Windsor Oceânico,8.9,193,[],0,Nobody here
+0,5235086b11d24cf7983bdff3,Pousada Rio Natureza,,1,[],0,Nobody here
+0,55db199a498ee2bf3ebda6b0,Piscina,,3,[],0,Nobody here
+0,57475b9c498eab124f474ec6,Cobertura Windsor Oceânico,,1,[],0,Nobody here
+0,5185adc0498e87fa50364104,Hotel Praia Linda,7.9,46,['Credit Cards'],0,Nobody here
+0,4c9ff4b96c479521c395890c,Barra Palace Hotel Residência,7.7,22,[],0,Nobody here
+0,4c82962c51ada1cd8cfe1d10,Promenade Barra First,6.7,135,['Credit Cards'],0,Nobody here
+0,4b058720f964a520178122e3,Windsor Barra Hotel,8.3,583,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4c81cd5ae63376b01791af3d,Next Residence Service,7.4,13,['Wi-Fi'],0,Nobody here
+0,55cbb241498ec10c53b77dae,Novotel Barra da Tijuca,8.6,132,[],1,One other person is here
+0,4bc7972293bdeee1448a37ae,Promenade Paradiso,5.7,90,['Credit Cards'],0,Nobody here
+0,4e37499b149579ccbaecc7f2,Papillon Motel,,0,[],0,Nobody here
+0,51e6cc77498e3c0d3bac6daa,Hotel Disneyland,,1,[],0,Nobody here
+0,4e3713b6149579ccbaea39e7,Almeida's Resort,,0,[],0,Nobody here
+0,4e34d1e48877beb5e9a5d813,Hotel Barão do Rio Branco,,0,[],0,Nobody here
+0,513eff6be4b0855bdd921dad,No mesmo andar que os Jonas,,0,[],0,Nobody here
+0,5223ab3f11d2822a7ffdb37d,Rooftop Ottero's,,0,[],0,Nobody here
+0,4e016c9cd1647696f1238148,Caminha do Beleza,,0,[],0,Nobody here
+0,5669dda3498eefc05f148366,Windsor Marapendi,9.3,171,[],0,Nobody here
+0,58e38a1d084be53042fc0e39,Hotel Laghetto Stilo Barra Rio,8.4,38,[],0,Nobody here
+0,4d212db8b69c6dcb19157795,Barrabella Hotel Residência,8.0,34,[],0,Nobody here
+0,4b869133f964a520e48f31e3,Transamérica Flat Barra,6.6,197,"['Reservations', 'Credit Cards', 'Outdoor Seating', 'Music', 'Wi-Fi', 'Drinks', 'Parking', 'Coat Check', 'Restroom', 'TVs']",0,Nobody here
+0,544c016e498e8a82d662a780,Promenade Link Stay,7.8,64,[],0,Nobody here
+0,4d1e3580d7b0b1f763ee019f,La Reserve Hotel Residence,8.0,6,[],0,Nobody here
+0,4fbe3f86e4b09e81e69c2b6b,Brisa Barra Hotel,7.8,75,['Credit Cards'],0,Nobody here
+0,4ce0567cffcf3704404c1f82,Condomínio Golden Coast,8.2,25,['Credit Cards'],0,Nobody here
+0,52dee41e498e8f50ae6069c0,Transamérica Prime Barra,6.8,21,['Credit Cards'],0,Nobody here
+0,4bc7972593bdeee1468a37ae,Promenade Casa del Mar,5.2,19,['Credit Cards'],0,Nobody here
+0,4f4baedbe4b0eddb54773c8b,stallion motel,,1,[],0,Nobody here
+0,4f497d21e4b0922ac64b7e23,Motel Free,,2,[],0,Nobody here
+0,4f8b3e6ce4b0af04c2346cda,Hotel Show,,0,['Credit Cards'],0,Nobody here
+0,5088149ce4b0b6701e3d174c,Hotel Itaoka,,0,['Credit Cards'],0,Nobody here
+0,4ec9b6a19adf9c7bf5b33148,Alojamento Pluma RJ,,1,[],0,Nobody here
+0,51e77536498e001aa4681abd,motel pinto loko,,0,[],0,Nobody here
+0,5b6386e1db1d81002c3172e2,ibis Styles Hotel,8.1,7,[],0,Nobody here
+0,570bd452498e8c11ccc646a1,Yoo2 Rio de Janeiro,8.2,29,[],0,Nobody here
+0,53d30513498ebed2ce05ef77,021 Hostel,7.3,13,[],0,Nobody here
+0,5af66443e65d0c002c1197e5,Suite 211 Zii Hotel,,0,[],0,Nobody here
+0,51e337feccda66c865500be9,Babilonia Rio Hostel,7.9,8,['Credit Cards'],0,Nobody here
+0,5bc951efe96d0c002cfcc654,Flink’s Mansion,,1,[],0,Nobody here
+0,4ce5f97cf865370445f69fc4,Panda Hotel,6.9,14,['Credit Cards'],0,Nobody here
+0,55fd42aa498ec350256a1349,rio boutique house,,0,[],0,Nobody here
+0,5b8812579b0473002cbef323,Do Samba Hostel,,3,['Reservations'],0,Nobody here
+0,58cdeedd76b8b27b769a7bcb,Hostel Da Bruna,,1,[],0,Nobody here
+0,4df13b66d1649c8a28d926cd,Alpha Hostel,,2,['Credit Cards'],0,Nobody here
+0,58482e20110d03341a1359a0,Vertical Hostel,,1,[],0,Nobody here
+0,56c9baee498e6709f01f58e0,Plaza Spania Design Hotel,6.5,8,[],0,Nobody here
+0,54f0fa6b498ee0f30acdf118,Gaia Comfort Hostel,7.0,10,['Credit Cards'],0,Nobody here
+0,567c3aa6498e639d1909b4af,Casa Tuxi,6.8,5,[],0,Nobody here
+0,4d521ca0253d6a31a0226f29,Bambina Hotel,,3,['Credit Cards'],0,Nobody here
+0,4bc64f02f360ef3b4a8adb2d,Hotel Visconti,,1,['Credit Cards'],0,Nobody here
+0,59711f3ce679bc300dc078a1,Quintal da Urca Hostel,,0,[],0,Nobody here
+0,53a0b8f1498e0e4d93d714a0,BotaHostel,,2,[],0,Nobody here
+0,4e59ace72271886714f7c373,Albergue Varandao,,0,[],0,Nobody here
+0,4faa79bbe4b06439cc67d528,Hotel Mercury Accor,,0,[],0,Nobody here
+0,50db642fe4b0f535ab71aa21,Rio Soul Hostel,7.0,17,['Credit Cards'],0,Nobody here
+0,5179c136498e199d2d02b766,Mercure Rio de Janeiro Botafogo Mourisco,7.3,153,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,51c4cd01498e40dc8e2cefaf,ibis Hotel,8.1,251,['Credit Cards'],0,Nobody here
+0,574047a2498ea4644c544ce0,ibis Budget Hotel,7.2,63,[],0,Nobody here
+0,573fd36e498e6e81ab22fa7a,Novotel RJ Praia de Botafogo,7.9,70,[],0,Nobody here
+0,4f5424d8e4b09f74b985bf63,L'HoteL Porto Bay SP,,0,[],0,Nobody here
+0,50539875e4b0540a7f63a9dd,hotel formule1,,0,[],0,Nobody here
+0,4bb26e7deb3e9521ae03ca0a,Windsor Plaza Hotel,6.9,133,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4bcf76080ffdce72b181b2c0,Hotel Argentina,6.9,30,['Credit Cards'],0,Nobody here
+0,4ca39d7e5720b1f7ee4733ef,Real Residence Hotel,7.4,30,['Credit Cards'],0,Nobody here
+0,50758d22e4b00408324527ab,Ibiza Hotel Copacabana,5.6,6,[],0,Nobody here
+0,4dbd84a24b222080d3aae351,Hostel Vila Carioca,7.3,20,['Credit Cards'],0,Nobody here
+0,55a8ffa9498e3d4413f169d0,Hostel da Leia,,1,[],0,Nobody here
+0,4f719931e4b068eb3deecec3,Hotel Diplomata,,2,['Credit Cards'],0,Nobody here
+0,4db0977d0437a93f7f769f80,Sun Rio Hostel,6.4,6,['Credit Cards'],0,Nobody here
+0,4ef668710aafbcb31ba9f9af,"R. Cardoso Júnior, 400",,2,['Credit Cards'],0,Nobody here
+0,4cd745b5122ba14382de37a1,Chil Hostel Rio,,0,[],0,Nobody here
+0,4f5bdc5ce4b07bddeeaed7dd,Hostel Ocean Inn Rio,,1,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,50706fd6e4b02bfe659c44c0,Chateau Ivanildo,,0,[],0,Nobody here
+0,50f7f1fee4b0b69dc50f1e81,chill hostel,,0,['Credit Cards'],0,Nobody here
+0,4e84f27f6c25c6f6a9144ea9,Albergue Do Cova,,0,[],0,Nobody here
+0,512e65e1e4b0dd81e69999cd,Hostel Praia de Botafogo,,0,[],0,Nobody here
+0,4ed06ddb6da162f1be8fbbc5,Caminha,,2,['Credit Cards'],0,Nobody here
+0,53169285498e681c957f813d,Hotel Bandeirantes roof-top terrace,,0,[],0,Nobody here
+0,4bc7abd514d7952115e567e9,Botafogo One Flat,,5,['Credit Cards'],0,Nobody here
+0,53aa2cd9498ecfb18fb4f812,Injoy Design Hostel,8.5,34,['Credit Cards'],0,Nobody here
+0,4bc7971493bdeee13f8a37ae,Best Western Augusto's Rio Copa Hotel,5.5,33,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4b058720f964a520f48022e3,Merlin Copacabana Hotel,6.6,70,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4d9dce7448b6224bc1b22c9f,love land,,1,['Credit Cards'],0,Nobody here
+0,4ce6bffcf1c6236a6f5855f0,Del Castilho Hotel,,0,[],0,Nobody here
+0,55ff4541498efeb054130d65,Hotel Fazenda Caluje,,0,[],0,Nobody here
+0,53754b01498eb9542d0d2f2a,Château da Isis,,0,[],0,Nobody here
+0,506e0023e4b0723f1bc56a50,Trek and Fly Hostel,,0,['Credit Cards'],0,Nobody here
+0,4c98d4d16ffe8cfaf8730030,Ilha Palace Hotel,,2,['Credit Cards'],0,Nobody here
+0,4f3a3485e4b024185ba90c3d,Golden Tulip São Conrado,,1,['Credit Cards'],0,Nobody here
+0,4e33cf09b0fb17f64f86e691,Hotel San Karlo,,0,[],0,Nobody here
+0,4fe3457ae4b0a9df26b3bc76,Sítio Huvulla,,0,[],0,Nobody here
+0,59fc9be26dcf047e26380040,Nobile Inn & Suites Via Première,,3,[],1,One other person is here
+0,55727180498ed7be47a62f7f,Grand Mercure Rio de Janeiro Riocentro,8.7,143,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,5721771438fadecc7878d6f2,Promenade Rio Stay,7.4,13,[],0,Nobody here
+0,4f7b9282e4b07223779a7dda,Hotel Riocentro,,2,['Credit Cards'],0,Nobody here
+0,4fa91882e4b0f8fbf1216911,Pousada Serra & Mar,,0,[],0,Nobody here
+0,57cbefdd498e532c66336103,Casa Pousada Felicidades,,1,[],0,Nobody here
+0,536bbfd7498ed3110a4e73fc,hotel midas jacarepagia,,0,[],0,Nobody here
+0,54423318498e5391911bf060,Qualicom Midas Rio Convention Suítes,5.3,6,[],0,Nobody here
+0,4caef30f562d224b95cd0988,Pousada Barra Riocentro,5.8,2,['Credit Cards'],0,Nobody here
+0,500f5bb7e4b0cb7f60bf6e76,Pousada Mansão Rio Centro,,0,[],0,Nobody here
+0,51f1f528498e0083095d428d,Pousada Bandeirantes,,4,['Credit Cards'],0,Nobody here
+0,53bf6b32498e0567f99aa85e,Midas Convention Suites,5.9,19,[],0,Nobody here
+0,4f00ebfd29c201c6fe599277,Restaurante - Hotel Do Bosque,,0,[],0,Nobody here
+0,4edad76c0e011b46ef005a0d,Jumbo Hotel,,0,['Credit Cards'],0,Nobody here
+0,53e02229498e0d41952890c9,Hotel de Trânsito dos Oficiais,,2,[],0,Nobody here
+0,51b2a05a498e7bc63ae484fa,West Village Hostel,,0,['Credit Cards'],0,Nobody here
+0,4f91cf65e4b0ad2456319f55,Hotel de Trânsito dos Oficiais- BAAF,,0,[],0,Nobody here
+0,52228cb811d27ab2ac909bd6,Albergue Tai e Bella,,0,['Credit Cards'],0,Nobody here
+0,518bc3ad498e2c8851083f65,Hotel Atlântico Tower,6.4,6,[],0,Nobody here
+0,4ca223d56c47952166109d0c,Éden Hotel,6.3,5,[],0,Nobody here
+0,4c6db91e6af58cfa1e5f8a17,Novotel Santos Dumont,7.1,128,['Credit Cards'],0,Nobody here
+0,4ba2a518f964a520270c38e3,Hotel Santa Teresa,9.1,164,['Credit Cards'],0,Nobody here
+0,4baa6677f964a5208e663ae3,ibis Hotel,5.9,204,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,55cbbe13498e353719dc6ba5,ibis Hotel,6.5,46,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,51ef4eea498e7656935f8e49,Hostel Vila Maria,,1,['Credit Cards'],0,Nobody here
+0,58fb883b9e0d54095a6300b0,Villa 25 Hostel & Suítes,7.9,3,[],0,Nobody here
+0,57aa365e498ef58c6c7f47e3,Casa Nova Hotel,7.8,10,[],0,Nobody here
+0,5ba2ece70719020025c64fa3,Days Inn,,3,[],0,Nobody here
+0,58bdfa002b04f85399f9221b,Petit Rio Hotel,7.5,18,[],0,Nobody here
+0,531e9835498e702be6018c9a,Santa Hospedagem,,1,[],0,Nobody here
+0,546a62d7498e6755a161e2d6,Palácio do Rei,,1,[],0,Nobody here
+0,530e0e00498e92aa798b9639,Hotel Casa Blanca,,1,[],0,Nobody here
+0,5742787a498e565e251daee2,Graja Hostel,,3,[],0,Nobody here
+0,54931a75498ee220d8d12ca3,Santa Terê Hostel,7.8,18,[],0,Nobody here
+0,565f6d44498ec19e14ef3dd2,Prodigy Hotel Santos Dumont,8.5,157,[],0,Nobody here
+0,4bd1b57b5e0cce72a9dea184,Scorial Hotel,7.2,87,['Credit Cards'],0,Nobody here
+0,4bafd6acf964a520e9243ce3,Hotel Novo Mundo,6.6,133,['Credit Cards'],0,Nobody here
+0,4d88150f5ecdf04d42cf8f8a,Hotel Atlântico Business,6.3,105,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,5af1d5628c35dc002c6e7d2f,Hotel Atlântico Prime,5.5,11,[],0,Nobody here
+0,4ba3ee0cf964a520a86e38e3,Windsor Asturias Hotel,7.6,97,['Credit Cards'],0,Nobody here
+0,4df3cfaa88772e1f81554296,Elegance Praia Hotel,6.9,43,['Credit Cards'],0,Nobody here
+0,4e12308f45dde6c62dda6680,Hotel Regina,7.5,117,['Credit Cards'],0,Nobody here
+0,4c095a2c6071a593c5c5dd32,Windsor Guanabara Hotel,6.9,319,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4eb6add729c212fb6ceb8129,Hotel Belas Artes,6.2,13,['Credit Cards'],0,Nobody here
+0,57696f0c498e044d551ea12d,Novotel RJ Porto Atlantico,7.9,49,[],0,Nobody here
+0,4bcf63fe0ffdce72c46bb2c0,Golden Park Hotel,5.2,29,['Credit Cards'],0,Nobody here
+0,50beec08e4b0456f4f63684b,Hotel Galicia,4.9,10,['Credit Cards'],0,Nobody here
+0,4d5ede27b6b9a1cd70fa6751,Hotel Vila Rica,6.6,23,['Credit Cards'],0,Nobody here
+0,4cde44dddf986ea86bfada16,Imperial Hotel,7.5,34,['Credit Cards'],0,Nobody here
+0,561ec8f3498e9f8489a258f8,ibis Budget Hotel,6.1,10,[],0,Nobody here
+0,4fdd2ceae4b0e07803357d82,Corcovado Rio Hostel,7.3,32,['Credit Cards'],0,Nobody here
+0,4cd99e3e3ec4b1f783acc43f,Hotel Pouso Real,5.9,9,['Credit Cards'],0,Nobody here
+0,4ff98202e4b054fbab650813,Kariok Hostel,8.7,21,"['Reservations', 'Credit Cards']",0,Nobody here
+0,51c7b4a1498e7baf2f15ca73,Caminha Quentinha da Gabs,,0,['Credit Cards'],0,Nobody here
+0,51ee01b9498eb819d14be6cd,Dona Emilia <3,,0,[],0,Nobody here
+0,4e7de0ce8b81e4f09139ab76,Hostel Flamengo,6.4,4,[],0,Nobody here
+0,4d2ced06ad25224b7839fb8f,Hotel Leão,6.6,4,['Credit Cards'],0,Nobody here
+0,55a3d42a498e513734809e18,Rua Correia Dutra,,2,[],0,Nobody here
+0,5943fcb2340a5849a841d027,The Backpacker Cat Hostel,,0,[],0,Nobody here
+0,4f483549e4b08f45dc998f36,Hotel Riazor,6.2,4,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,547a943d498e385d5400aa8a,Easygoing Hostel,,3,[],0,Nobody here
+0,5068c449498ef43ce71decf1,Organic House Hostel,,1,[],0,Nobody here
+0,520a46bb11d261f7b6cdb8df,Yes! Rio Hostel,,3,"['Credit Cards', 'Wi-Fi', 'Menus']",0,Nobody here
+0,4e308b0fe4cd6396f9c0848e,Hotel Rio Claro,,0,[],0,Nobody here
+0,50c61e7de4b032fa83fa113c,Hotel Vitória,,0,['Credit Cards'],0,Nobody here
+0,5d57deba2b148600084b49b7,Restaurante Do Hotel Regina,,0,[],0,Nobody here
+0,522ac5ab11d2718de2e07569,Hotel Serrano,,2,[],0,Nobody here
+0,4eb2a3ea8231c65b1a608419,Hotel Unico,4.9,1,[],0,Nobody here
+0,546eae2f498e6225271d62c0,The Great House,,0,[],0,Nobody here
+0,505742f1e4b05888533221e7,Piscina,,2,[],0,Nobody here
+0,53420f2e498ea94402d88d02,Hotel Brás Laranjeiras,,1,['Credit Cards'],0,Nobody here
+0,5324d0fa498e4d973563b766,1900,8.1,34,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,529aa92b498e63e157c21d17,Hotel Pedro Américo,,0,[],0,Nobody here
+0,566c0b06498e58ba373145b9,Hosteria Vila Vieira's Hyo,,0,[],0,Nobody here
+0,4c7e4f49b33a224b5c77da81,Windsor Flórida Hotel,8.0,260,['Credit Cards'],0,Nobody here
+0,516ef82745b0e55a186fa310,King Albergue Hostel,,0,['Credit Cards'],0,Nobody here
+0,53cd0821498e3cb77aca61c6,Obra Artur Bernardes,,0,[],0,Nobody here
+0,4f5eaadae4b03142f52c0fdc,King Hostel,,1,[],0,Nobody here
+0,52f2eb23498ee717fdbfa23c,Monterrey Hotel,,0,['Credit Cards'],0,Nobody here
+0,56b8d43d498e29ef0d4717c7,kamer 206,,0,[],0,Nobody here
+0,5301871e498e67ef37221c0b,Arthostel,,0,[],0,Nobody here
+0,4bd79640304fce72ffbb33ab,Mengo Palace Hotel,7.3,37,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4d2b63a6467d6ea883efdf95,Rondônia Palace Hotel,6.3,28,['Credit Cards'],0,Nobody here
+0,4de2f5d245dd180ae554080e,Hostel República,4.9,11,['Credit Cards'],0,Nobody here
+0,54a45c97498e077a27f4d532,Hostel Casa do Barão,,0,[],0,Nobody here
+0,50e4ff38e4b0332f5e697be6,Friday Hostel,6.0,3,['Credit Cards'],0,Nobody here
+0,4eff660d61af974bcda08a0b,Hotel Floriano,,0,[],0,Nobody here
+0,588b4259a36ecd0539bbb56c,Belga Hotel,,5,[],0,Nobody here
+0,52941964498e7e1cc5082380,Gamboa Rio Hotel,5.0,3,['Credit Cards'],0,Nobody here
+0,52d8a0df498e01837abe7fb1,Hostel Mambembe,7.7,9,['Credit Cards'],0,Nobody here
+0,4e7762e98998ed82a597bb33,Hotel São Jorge,,0,[],0,Nobody here
+0,5c7a8888dee770002c1705dd,Rio Galles Hotel,,0,[],0,Nobody here
+0,4d62de55d85da35d982f88d4,Hotel Americano,5.9,10,['Credit Cards'],0,Nobody here
+0,514a3dd7e4b024dce66bf334,Hotel Mundo Novo,,0,['Credit Cards'],0,Nobody here
+0,583cb3c26119f4622985f5ae,Mauá Rio Hostel,,0,[],0,Nobody here
+0,586783d558c4d132e3da0555,Hostel do beco,,0,[],0,Nobody here
+0,566b2041498e6c1021161273,Business Flat,,0,[],0,Nobody here
+0,4e78ba91d1646aa04d67c2fe,Lips Motel,,2,[],0,Nobody here
+0,50199d76e4b08c88336abdd6,Hotel Arcos,,1,[],0,Nobody here
+0,5355baa1498eeed72bc007dc,Piscina,,0,[],0,Nobody here
+0,53540495498ecfe2c3b36421,Mambembe,,2,['Credit Cards'],0,Nobody here
+0,4e787a678998834aa40e97a0,Hotel Aeroporto Othon Travel,,1,['Credit Cards'],0,Nobody here
+0,59c67f256f0aa23f35026934,Sugar Loft Apartments,,2,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,532446f0498e616f1fe49217,centralrio hostel,,0,[],0,Nobody here
+0,4b058720f964a5200b8122e3,Rios Presidente,4.5,7,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4d973198af3d236aa3921cc7,Casa Mango Mango,,3,[],0,Nobody here
+0,4f644ac0e4b0272f2be19270,Hotel Rio,,0,[],0,Nobody here
+0,4d723edc311f6ea8638bd8ea,Hotel Viña del Mar,4.9,12,['Credit Cards'],0,Nobody here
+0,4d981370647d8cfad8e1e63d,Hotel Carioca,6.0,11,['Credit Cards'],0,Nobody here
+0,4f47c3f2e4b0f85d0749ee20,Hotel Pompeu,5.0,6,['Credit Cards'],0,Nobody here
+0,4f3636fae4b0571dc61f5ed5,Albergue Terra Brasilis,,0,[],0,Nobody here
+0,51cc82f0498e5a3af22a3dbc,Santo Mirante Hostel,,0,['Credit Cards'],0,Nobody here
+0,4e3c210918a83d5b283195e5,Rio Aplauso Hostel,6.8,4,['Credit Cards'],0,Nobody here
+0,51184bc5e4b08106352ad086,Hotel Alicante,,0,[],0,Nobody here
+0,52bf7c7a11d2126c61404cc1,Bed and Breakfast Santa Teresa,,0,['Wi-Fi'],0,Nobody here
+0,531fa2e7498ecb0a4cd940a4,rio hostel terrace,,0,[],0,Nobody here
+0,514a57bbe4b06ccb315e4916,Hotel OK,5.9,25,['Credit Cards'],0,Nobody here
+0,4fddc042e4b03622b1d59261,CaipiHostel,7.4,20,"['Credit Cards', 'Wi-Fi', 'Drinks']",0,Nobody here
+0,4d9c632748b6224b98bf0b9f,Books Hostel,8.3,29,['Credit Cards'],0,Nobody here
+0,50917cda8055b16bc27448e1,Manga Hostel,8.7,46,['Credit Cards'],0,Nobody here
+0,4eeddc1077c82b92f87d5a99,Fluminense Hotel,5.9,20,['Credit Cards'],0,Nobody here
+0,5265aab9498e36c37a174580,Studio 6677 - Stand Apart Hotel,,1,[],0,Nobody here
+0,5285506f498ee4c62fd0e43e,Otherside Hostel,,0,['Credit Cards'],0,Nobody here
+0,549e84a0498e6de3ba5b72e4,Rio Maravilha Hostel,,0,[],0,Nobody here
+0,50563312e4b0c683605a5ca0,Beco do AK Resort Hotel,,1,[],0,Nobody here
+0,5a4bafc7464d656fed5730f1,Acari Beach Lounge,,0,[],0,Nobody here
+0,5280363c11d20c8dc975183b,Suite Elegance,,1,['Credit Cards'],0,Nobody here
+0,4b058720f964a520128122e3,JW Marriott Hotel Rio de Janeiro,8.3,299,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,5b19a6f87269fe002c9721e0,Windsor California Hotel,8.6,16,[],0,Nobody here
+0,4b05871ff964a520d18022e3,Belmond Copacabana Palace,9.3,747,['Credit Cards'],0,Nobody here
+0,5145d255e4b0a40e45de41ff,Lobby,,3,['Credit Cards'],0,Nobody here
+0,57488f30498e5d2282ecd75a,Ritz Copacabana Boutique Hotel,8.6,19,[],0,Nobody here
+0,5696cad0498e17d34d4fc5c3,Royalty Rio Hotel,5.5,7,[],0,Nobody here
+0,5ab2e708bd400921d0674f34,Rio Copa Hostel,,0,[],0,Nobody here
+0,5231e6ab11d2688bc97931b3,Copacabana Hostel,,3,['Credit Cards'],0,Nobody here
+0,555f3f62498eb6113473720c,Copamar Hotel,,1,[],0,Nobody here
+0,4ebff7db722e0f78ddd3b21c,Copac@bana Executive Flat,,5,['Credit Cards'],0,Nobody here
+0,5053d09ce4b0c994074b2dd8,Santa Clara Flat - Hotel Residência,7.7,8,['Credit Cards'],0,Nobody here
+0,5670a658498e461896b0530c,Secreto Hostel,,1,[],0,Nobody here
+0,4c2948b43492a59303c4b828,Arena Copacabana Hotel,8.3,116,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4f084d40e4b0a2229aaa3317,Olinda Rio Hotel,7.1,52,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,56460197498e4a6340977b67,ibis Hotel,8.8,134,[],0,Nobody here
+0,50a8dc98e4b089c951502e79,ibis Hotel,7.2,112,['Credit Cards'],0,Nobody here
+0,55f6bae0498e9b20fe8c471e,ibis Budget Hotel,7.7,86,[],0,Nobody here
+0,5866ee46076be149b7c73683,Maison De La Plage,,1,['Credit Cards'],0,Nobody here
+0,4bc8f3fc762beee1d5bc3d38,Windsor Palace Hotel,7.7,66,['Credit Cards'],0,Nobody here
+0,4dd9f4fad1647fcf3e875a16,Hotel Sol Copacabana,5.8,38,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4c217f2b11de20a15b8383ce,Copacabana Suítes,6.2,40,['Credit Cards'],0,Nobody here
+0,4b05871ff964a520e28022e3,Apa Hotel,6.0,23,['Credit Cards'],0,Nobody here
+0,57a4df6f498e1239bea94c3d,Hotel Atlântico Travel,7.7,26,[],0,Nobody here
+0,4b058720f964a520098122e3,Real Palace Hotel,6.8,32,['Credit Cards'],0,Nobody here
+0,4bcf4f830ffdce721661b2c0,Hotel Astoria Copacabana,6.3,66,['Credit Cards'],0,Nobody here
+0,4cb62c8a86e09eb0d0a662e2,Pestana Rio Atlântica Hotel,8.1,339,['Credit Cards'],0,Nobody here
+0,58014101d67c3b6b4031e74d,Hotel Emiliano,9.1,34,[],0,Nobody here
+0,4bce62f4c564ef3b744ceef0,Royal Rio,8.1,161,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4e010e20483bd352f72041ac,Mirador Rio Hotel,6.8,58,['Credit Cards'],1,One other person is here
+0,4b0fe5faf964a520026623e3,Hotel Astoria Palace,6.6,51,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,5226806911d23c4a12daf159,Apart Hotel Copacabana,7.7,8,['Credit Cards'],0,Nobody here
+0,4b05871ff964a520d68022e3,Hotel Rio Lancaster,5.6,28,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4b058720f964a520048122e3,Majestic Rio Palace Hotel,6.5,47,['Credit Cards'],0,Nobody here
+0,4b05871ff964a520d58022e3,Premier Copacabana Hotel,5.6,60,['Credit Cards'],0,Nobody here
+0,4d7133b21529a14388dd97a0,Atlântico Praia Hotel,5.8,44,['Credit Cards'],0,Nobody here
+0,4e336fee62e1733d7aa2724b,Hotel Sesc Copacabana,8.6,60,['Credit Cards'],0,Nobody here
+0,4b058720f964a520f98022e3,Windsor Excelsior Hotel,7.5,123,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4b058720f964a520f58022e3,PortoBay Rio Internacional Hotel,8.6,92,"['Reservations', 'Credit Cards', 'Wi-Fi']",0,Nobody here
+0,535199e7498e0290c372fb1c,Hotel Atlântico Rio,6.8,152,['Credit Cards'],0,Nobody here
+0,4e7e3d50be7bddefa44ef237,Hostel Rio Ritz,,0,[],0,Nobody here
+0,4d396a8e687ca35de9137fc4,Hotel Mar Palace,7.7,79,['Credit Cards'],0,Nobody here
+0,4da75d0504376c33686eb028,Mirassol Hotel,,2,['Credit Cards'],0,Nobody here
+0,4e0e44e3d22d8582bdbda713,Chez Mère,,0,['Credit Cards'],0,Nobody here
+0,4cec5e6c5de16ea8274bb096,Hotel Crystal Palace,,0,[],0,Nobody here
+0,4d64f983072a6ea87cb4f74d,El Misti House,8.1,47,['Credit Cards'],0,Nobody here
+0,4b058720f964a520fb8022e3,Hotel Atlântico Copacabana,5.4,80,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4fcccca0e4b093c385952d8b,Windsor Copa Hotel,7.9,123,['Credit Cards'],0,Nobody here
+0,4dbf44404b2221ec2d574830,Plaza Elysées Double Residence Service,6.1,4,[],0,Nobody here
+0,4ef2033e991151406c023f0c,Royalty Copacabana Hotel,4.6,39,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,5154121fe4b050c4297cd057,Braz de Pina Palace Hotel,,1,[],0,Nobody here
+0,4f9b827ce4b065054b979e24,Motel Bariloche,,1,[],0,Nobody here
+0,517a0e23e4b00f3e18351f46,Surf Motel,,1,[],0,Nobody here
+0,520416f7498eaeb634c6e17a,Solar Do Cosme,7.9,9,[],0,Nobody here
+0,5219524c11d2f9bf451024b3,Hostel Afrodite Se Quiser,,0,['Credit Cards'],0,Nobody here
+0,566ec89c38fa37fd4cdc41c2,Les Jardins,6.8,5,[],0,Nobody here
+0,551710ce498e4a598e21f918,Casa Beludi,8.1,9,[],0,Nobody here
+0,59ffc0498b98fd4a2d1c40dd,Casa Caminho do Corcovado,,0,[],0,Nobody here
+0,517be8dce41213864f94f9b8,Hotel - Albinos (ITAPERUNA),,0,[],0,Nobody here
+0,59c70553d8096e534092c206,Village Potira - The Guest House,,0,[],0,Nobody here
+0,54d8c9ef498e52c0dd5ae532,ibis Hotel,8.6,151,['Credit Cards'],0,Nobody here
+0,521aa06a498ea0a99772e397,Signos Hotel,,0,[],0,Nobody here
+0,4d45e9ea2e326ea850c3f2a6,Magnus Motel Norte,,0,['Credit Cards'],0,Nobody here
+0,50dc78f7e4b05e3a0dbe19c4,Hotel Fazenda Montanhês,,0,[],0,Nobody here
+0,4e58fbad7d8b966a15c1e06f,Megara Hotel,,5,[],0,Nobody here
+0,50a4f985e4b0682d4fb6366b,Atlantica Hotels Internacional,,0,[],0,Nobody here
+0,4e98ac367ee571e1ee4333ed,Hotel Rosa da Vila,,2,['Credit Cards'],0,Nobody here
+0,4d8fe37dd4ec8cfae9229789,Motel Flor de Maio,,3,['Credit Cards'],0,Nobody here
+0,51759fa4e4b02169a1c1ce8e,Pousada Angra Bella,,1,[],0,Nobody here
+0,4fa1a9f9e4b0a22f80e554b4,Kaza Rio,,5,"['Reservations', 'Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4ce27e743644a093f498629f,Motel Magnus,,3,['Credit Cards'],0,Nobody here
+0,5865c803727ba373f2239fc8,Hospedagem Carioquinha,,0,[],0,Nobody here
+0,529fc0a111d23eef8c6ed60e,Motel Classic,,0,['Credit Cards'],0,Nobody here
+0,4c256a2c5c5ca593fe7544fe,Barão do Flamengo Hotel,,2,['Credit Cards'],0,Nobody here
+0,52004297498ebd321918e6e8,Hotel  Venezuela na Praia do Flamengo - RJ.,,0,[],0,Nobody here
+0,4e7918d345dd919c60fa19c6,Hotel Venezuela,5.7,6,['Credit Cards'],0,Nobody here
+0,4e57e0eb7d8bf55c172eb7b6,Augusto's Paysandú Hotel,5.7,12,['Credit Cards'],0,Nobody here
+0,5926ebc86fd62668ebb3de67,Quarto 503,,0,[],0,Nobody here
+0,4e0b58b6ae60e479ad9f4f75,Golden Age Flat,,1,['Credit Cards'],0,Nobody here
+0,5e45f3a0ac54950008dfec0e,Quarto 506,,0,[],0,Nobody here
+0,4d545e0b6aaa59416d6f336f,Hotel Beija Flor,6.6,9,['Credit Cards'],0,Nobody here
+0,4ccc958c02a595217d553ce8,Hotel Caxambu,,1,['Credit Cards'],0,Nobody here
+0,4f0e3abae4b00ae6bc015e6a,Palladium Flat Service,,3,['Credit Cards'],0,Nobody here
+0,54e1338a498edb22195f9473,Casarão 37,,0,[],0,Nobody here
+0,4bc8f3fe762beee1d6bc3d38,Paysandu Hotel,,1,['Credit Cards'],0,Nobody here
+0,4f933740e4b01970bbbff7ee,Albergue otsukas,,2,[],0,Nobody here
+0,4cc2998abe40a35db39c724c,Ed. Majestic Plaza,,1,[],0,Nobody here
+0,508aab57e4b01ff7515efd37,Albergue da Marta,,0,[],0,Nobody here
+0,4d29dd82ebacb1f79582fe4f,Daddy's Pool - Private,,0,[],0,Nobody here
+0,54dfb9b2498e70c66e853196,Pensão da Luiza,,0,[],0,Nobody here
+0,505e1562e4b0b4bf455fe449,Miojo Amarelo,,0,[],0,Nobody here
+0,5169d150e4b0782ebdb8d6b6,Bed&Breakfast Seabra,,1,['Credit Cards'],0,Nobody here
+0,4e7bee0c1f6eb36f194dee8f,Hostel In Rio,8.7,17,['Credit Cards'],0,Nobody here
+0,4edd34d09911a3e79077e261,Caracas Rio Hotel,4.8,5,['Credit Cards'],0,Nobody here
+0,528fde0c11d281f65ef0111f,Le Grand Chevrand ⭐️⭐️⭐️⭐️⭐️,,0,[],0,Nobody here
+0,50b47378e4b0fc92b3adf961,Hotel Barra Brisa,,0,[],0,Nobody here
+0,51df9574498e6985bcd9dd91,Albergue São Benedito,,0,[],0,Nobody here
+0,4e7568cd45ddd4323fbdb622,Maranjubara,,0,[],0,Nobody here
+0,51df95c5498e10faf8ecb782,Hollyday Inn,,0,[],0,Nobody here
+0,4dd1be351f6ef5f6ccc5e6c0,Motel Ville,,0,['Credit Cards'],0,Nobody here
+0,4ecc409f0aafc147456b717e,Charm Motel,,2,['Credit Cards'],0,Nobody here
+0,519595c9498eb35b3dcb0ecf,Congregação Das Servas De Maria Do Brasil,,0,[],0,Nobody here
+0,52548dda11d21b9c7e452471,Linx Hotel,6.0,68,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,5190d644498e2afc46bb69e1,Courtyard Marriott RDU hotel,,0,[],0,Nobody here
+0,5a5403480531e81b858b8daf,Hangar Rio Hostel,,1,[],0,Nobody here
+0,502843b1e4b07a366cd292d6,Hotel de Trânsito da BAGL,7.2,11,[],0,Nobody here
+0,5b67151c9d7468002c8ebb1c,Aerotel Hotel de Trânsito,,0,[],0,Nobody here
+0,539f8f72498e1bf851e4786f,Bed and Breakfast Leblon,,2,[],0,Nobody here
+0,52692b49498e87d7b3171d9e,Rio Aeroporto Hotel,5.8,19,['Credit Cards'],0,Nobody here
+0,4bc8f3fa762beee1d4bc3d38,Luxor Hotel Aeroporto,4.8,15,['Credit Cards'],0,Nobody here
+0,4fc2ace1e4b09af80b98066a,Brookstreet,,0,[],0,Nobody here
+0,4f5fd5a9e4b039028ec5effa,Pousada Da Renata,,0,[],0,Nobody here
+0,50e037cbe4b0f94bd48a02f5,Estada Stela Figueira,,0,[],0,Nobody here
+0,52a5219511d251e447391f13,Verlaine Hotel,,1,['Credit Cards'],0,Nobody here
+0,4f172f71e4b019e996e5d5b6,Hotel San Diego,,0,[],0,Nobody here
+0,4e803ea2775ba065280b551a,"Hotel Barão de Tefé, 99",5.3,2,['Credit Cards'],0,Nobody here
+0,4e4681da1f6e29f10da61830,Hotel Amazonas,,0,[],0,Nobody here
+0,4e2c720f45dd3272c81d79eb,Alameda Hotel,,1,['Credit Cards'],0,Nobody here
+0,5c586407829b0c002c8bc9bb,Hotel Selina Lapa Rio de Janeiro,7.5,8,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,5246ae1211d21d984a0bc5e0,Diamond Hotel,,0,['Credit Cards'],0,Nobody here
+0,59c67749628c830948a47672,Rio Earth Hostel,,0,[],0,Nobody here
+0,554e0f5f498e845219c47f2e,Casa da Gente,,0,[],0,Nobody here
+0,4fd2c196e4b098b0820731a5,Hercus Hostel,6.1,3,['Credit Cards'],0,Nobody here
+0,58379a7e1d21ba48bff7c8fc,Casa Geranio,,2,[],0,Nobody here
+0,4e6f414dd22de80163862354,Hotel Passeio,,0,[],0,Nobody here
+0,4cf187967e0da1cda9339297,Cidade Maravilhosa Hostel,7.0,6,['Credit Cards'],0,Nobody here
+0,55fea756498e73955ac6443f,Hotel Casa Joaquim Silva,,2,[],0,Nobody here
+0,5182aeb4498e1c1b376e580d,Hotel Viña Del Mar,,3,[],0,Nobody here
+0,4b05871ff964a520dc8022e3,Hotel Glória,,3,['Credit Cards'],0,Nobody here
+0,5a103acf50a6f01f4a6ce862,Lapa Ville Hotel,,0,[],0,Nobody here
+0,5b1b2e406fd626002cb399a7,Piscina,,0,[],0,Nobody here
+0,4c6ad1147c052d7f491628cf,Love Time,,2,[],0,Nobody here
+0,50f5a9ede4b089100a47a0b4,Discovery Hostel Rio,8.5,18,['Credit Cards'],0,Nobody here
+0,52519c9e11d2a10a2f88c93b,Habitat Carioca,,4,['Credit Cards'],0,Nobody here
+0,4d3df4dad2c8f04d21aa6e72,Carmen e Fernando Bed and Breakfast,,4,[],0,Nobody here
+0,4ce86226948f224b6428f05d,Pousada Baron Garden,,1,[],0,Nobody here
+0,507a52c1e4b0602b630f0598,Hospedaria para Solteiros,,0,[],0,Nobody here
+0,4dd5977b7d8b322663c35133,Centro Recreativo Da Glória,,0,[],0,Nobody here
+0,55de184b498e923060b079da,Hostel Colina,,1,[],0,Nobody here
+0,57697217498e2878c6bd0206,Hub Hostel,,0,[],0,Nobody here
+0,531fa28b498e03b60314ff97,room 4,,1,[],0,Nobody here
+0,57a6912a498ebb2201b07964,55 Rio Hotel,7.7,25,"['Credit Cards', 'Wi-Fi']",0,Nobody here
+0,4c94ef3d72dd224bd19d9e91,Rio Hostel,,1,['Credit Cards'],0,Nobody here
+0,4ed455b7e5fa7b1a91d338ac,Hotel Marajó,,2,[],0,Nobody here
+0,51218f9ae4b02e58d2978da0,Albergue da Martaruga,,1,[],0,Nobody here
+0,5055ed7ce4b09a662e0a2050,Santa Teresa Central Hostel,,0,['Credit Cards'],0,Nobody here
+0,5317c960498e58f737b8a81e,Ivapatch bed and breakfast,,0,['Credit Cards'],0,Nobody here
+0,512b4ca8e4b089fc49e3610d,Hostal Maracuja,,0,[],0,Nobody here
+0,4d40a2a2255d8cfaecb76705,Carmen E Fernando,,0,[],0,Nobody here
