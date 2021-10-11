@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang=“pt-br”>
+
+<head> 
+		<title>Eloquent Javascript - Summary 1</title>
+		<meta charset=“UTF-8”>
+
+		<style >
+			div { 	width: 500px;   /*No height*/
+					padding: 30px 50px;
+					margin: 0px 50px;
+
+					position: absolute;
+					left: 350px;
+
+					border-width: 10px;
+					border-color: black;
+					border-radius: 35px;
+					background-color: yellow;
+					font-family: Cambria;
+					
+			}
+
+			p {
+					font-size: 14px;
+					text-align: justify;
+					margin: 0;            /* Eliminates space between paragraphs. */
+					text-indent: 0;
+
+			}
+		
+
+		</style>
+		
+		<script type="text/javascript">
+			
+			// Back slash "\" to escape code characters like " and \ (double bracktes and back slash). 
+			var text = "A newline character is written like \"\\n\"."
+			console.log(text)
+			
+			// Use Backtick-quoted strings `` and ${} to insert a variable's value into a string.
+			var text = 'Variable'; var variable = 100
+			console.log(`${text} = ${variable}`)
+
+			// Unary operator "type of" to return the data type of a value 
+			console.log('data type of 4.5: ' + typeof 4.5)
+
+			// NaN != NaN ?
+			console.log("NaN==NaN?: " + String(NaN==NaN))
+			console.log("NaN===NaN?: " + String(NaN===NaN))
+
+			// Ternary operator (three values): (Condition ? value_if_true : else_vale)
+			a = 10; b = 20
+			console.log(`O maior valor entre ${a} e ${b} é: ${ a>b ? a : b }`)
+
+			// Automatic Type Conversions
+			console.log("8 * null: "+String(8 * null))
+			// → 0
+			console.log("\"5\" - 1: "+String("5" - 1))
+			// → 4
+			console.log("\"5\" + 1: "+String("5" + 1))
+
+		</script>
+
+</head>
+
+<body>
+	<div >
+		<h2>Summary 1 - Eloquent Javascript</h2>
+		<h3>Values, Types and Operators</h3>
+
+		<h4>JavaScript Code:</h4>
+
+			<p>// Back slash "\" to escape code characters like " and \ (double bracktes and back slash).</p>
+			<p>var text = "A newline character is written like \"\\n\"."
+			console.log(text)</p>
+			<br>
+
+			<p>// Use Backtick-quoted strings `` and ${} to insert a variable's value into a string.</p>
+			<p>var text = 'Variable'; var variable = 100</p>
+			<p>console.log(`${text} = ${variable}`)</p>
+			<br>
+
+			<p>// Unary operator "type of" to return the data type of a value</p>
+			<p>console.log('data type of 4.5: ' + typeof 4.5)</p>
+			<br>
+
+			<p>// NaN != NaN ?</p>
+			<p>console.log("NaN==NaN?: " + String(NaN==NaN))</p>
+			console.log("NaN===NaN?: " + String(NaN===NaN))</p>
+			<br>
+
+			<p>// Ternary operator (three values): (Condition ? value_if_true : else_vale)</p>
+			<p>a = 10; b = 20</p>
+			<p>console.log(`O maior valor entre ${a} e ${b} é: ${ a>b ? a : b }`)</p>
+			<br>
+
+			<p>// Automatic Type Conversions</p>
+			<p>console.log("8 * null: "+String(8 * null))</p>
+			<p>console.log("\"5\" - 1: "+String("5" - 1))</p>
+			<p>console.log("\"5\" + 1: "+String("5" + 1))</p>
+
+		<br>
+		<p>(<b>Check the page console to see the code output!</b>)</p>
+		<br>
+		<p>To access the page console: Right Click ---> Inspect ---> Console</p>
+
+	</div>
+</body>
+
+</html>

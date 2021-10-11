@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang=“pt-br”>
+
+<head> 
+		<title>Eloquent Javascript - Summary Chapter 3</title>
+		<meta charset=“UTF-8”>
+
+		<style >
+			div { 	width: 500px;   /*No height*/
+					padding: 30px 50px;
+					margin: 0px 50px;
+
+					position: absolute;
+					left: 350px;
+
+					border-width: 10px;
+					border-color: black;
+					border-radius: 35px;
+					background-color: yellow;
+					font-family: Montserrat;		
+			}
+			p {
+					font-size: 14px;
+					text-align: justify;
+					margin: 0;            /* Eliminates space between paragraphs. */
+					text-indent: 0;
+			}
+		</style>
+		
+		<script type="text/javascript">
+
+			// Defining a function:
+			const power = function(base, exponent) {
+				let result = 1;
+				for (let count = 0; count < exponent; count++) {
+				result *= base;
+				}
+				return result;
+			};
+
+			// Bindings and scope:
+			const halve = function(n) {
+			return n / 2;
+			};
+			let n = 10;
+			console.log(halve(100));
+			console.log(n);
+
+			// Another way of  defining functions (the function call can precede the definition):
+			console.log("The future says:", future());
+			function future() {
+			return "You'll never have flying cars";
+			}
+
+			// Arrow function notation
+			const power = (base, exponent) => {
+			let result = 1;
+			for (let count = 0; count < exponent; count++) {
+			result *= base;
+			}
+			return result;
+			};
+
+			// Reduced arrow function notation (both are the same)
+			const square1 = (x) => { return x * x; };
+			const square2 = x => x * x;
+
+			// Arrow function treated as a variable (activated two times).
+			function multiplier(factor) {
+			return number => number * factor;
+			}
+			let twice = multiplier(2);
+			console.log(twice(5));
+			
+			// Recursion (Calling a function inside itself).
+			function power(base, exponent) {
+				if (exponent == 0) {
+					return 1;
+				} else {
+					return base * power(base, exponent - 1);
+				}
+			}
+			console.log(power(2, 3));
+
+
+
+
+
+
+			code_text = ``
+
+		</script>
+
+</head>
+
+<body>
+	<div >
+		<h2>Eloquent Javascript - Chapter 3</h2>
+		<h3>Functions</h3>
+		<h4>JavaScript Code:</h4>
+
+		<p name='page_text'>(<b>Check the page source code and console.</b>)</p>
+
+	</div>
+</body>
+
+</html>

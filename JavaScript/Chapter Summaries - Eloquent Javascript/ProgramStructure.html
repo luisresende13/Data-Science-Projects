@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang=“pt-br”>
+
+<head> 
+		<title>Eloquent Javascript - Summary Chapter 2</title>
+		<meta charset=“UTF-8”>
+
+		<style >
+			div { 	width: 500px;   /*No height*/
+					padding: 30px 50px;
+					margin: 0px 50px;
+
+					position: absolute;
+					left: 350px;
+
+					border-width: 10px;
+					border-color: black;
+					border-radius: 35px;
+					background-color: yellow;
+					font-family: Montserrat;		
+			}
+			p {
+					font-size: 14px;
+					text-align: justify;
+					margin: 0;            /* Eliminates space between paragraphs. */
+					text-indent: 0;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			
+			// CONDITIONAL STATEMENTS: 
+
+			// "if else" Statement: "if () {;} else if () {;} else {;}"
+			let a = 10, b = 20
+			if (a>b) {console.log('a>b');}
+			else if (a<b) {console.log('a<b');}
+			else {console.log('a=b');}
+
+			/* "swith case" Statement: switch (value) {case "option1": command1; case "option2": command2; default: command3;} 
+			(Every case after a match will be executed).*/
+			
+			switch ( 'something' ) {
+				case 'something': console.log('You funny bastard!');
+				case 'nothing': 
+					console.log('You miserable bastard!'); 
+					console.log('You are some sad motherfucker!'); 
+					break;
+				case 'exit': {console.log('Leaving!'); console.log('Bye bye!');}
+				default: console.log('No match found!');
+			}
+
+			// FLOW STATEMENTS:
+
+			// "while" Statement: while (condition) {command;}
+			let end=10, i=0, list=[]
+			while (i<=end) { list[i]=i; i++; }
+			console.log(list)
+			
+			// "do while": do {;} while ();
+			end=10, i=0, list=[]
+			do {list[i]=i; i++} while (i<=end)
+			console.log(list)
+
+			// "for" loop: for (binding; condition; state update) {command}
+			list=[]
+			for (let i=0; i<10; i++) { list[i]=i**2; }
+			console.log(list)
+
+			code_text = `// CONDITIONAL STATEMENTS: 
+
+			// "if else" Statement: "if () {;} else if () {;} else {;}"
+			let a = 10, b = 20
+			if (a>b) {console.log('a>b');}
+			else if (a<b) {console.log('a<b');}
+			else {console.log('a=b');}
+
+			/* "swith case" Statement: switch (value) {case "option1": command1; case "option2": command2; default: command3;} 
+			(Every case after a match will be executed).*/
+
+			switch ( 'something' ) {
+				case 'something': console.log('You funny bastard!');
+				case 'nothing': 
+					console.log('You miserable bastard!'); 
+					console.log('You are some sad motherfucker!'); 
+					break;
+				case 'exit': {console.log('Leaving!'); console.log('Bye bye!');}
+				default: console.log('No match found!');
+			}
+
+			// FLOW STATEMENTS:
+
+			// "while" Statement: while (condition) {command;}
+			let end=10, i=0, list=[]
+			while (i<=end) { list[i]=i; i++; }
+			console.log(list)
+
+			// "do while": do {;} while ();
+			end=10, i=0, list=[]
+			do {list[i]=i; i++} while (i<=end)
+			console.log(list)
+
+			// "for" loop: for (binding; condition; state update) {command}
+			list=[]
+			for (let i=0; i<10; i++) { list[i]=i**2; }
+			console.log(list)`
+
+		</script>
+
+</head>
+
+<body>
+	<div >
+		<h2>Eloquent Javascript - Chapter 2</h2>
+		<h3>Program Structure</h3>
+		<h4>JavaScript Code:</h4>
+
+		<p name='page_text'>(<b>Check the page source code and console.</b>)</p>
+
+	</div>
+</body>
+
+</html>
