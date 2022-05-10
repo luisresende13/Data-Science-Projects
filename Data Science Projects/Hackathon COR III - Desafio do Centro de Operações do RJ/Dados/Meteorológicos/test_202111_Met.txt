@@ -1,0 +1,6 @@
+Relatório Meteorológico da Estação: Teste
+
+Dados normalizados para o Horário Brasileiro de Verão (HBV)
+
+Dia         Hora      HBV   Chuva  DirVento  VelVento  Temperatura  Pressao  Umidade
+                                     (graus)     (Km/h)    (celsius)    (hPa)      (%)

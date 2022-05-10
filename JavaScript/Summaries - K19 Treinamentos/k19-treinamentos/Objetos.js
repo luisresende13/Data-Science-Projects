@@ -13,6 +13,11 @@ var objeto = {
 console.log(objeto.propriedade1);
 console.log(objeto['propriedade1']);
 
+// 3. Recuperando chaves do objeto
+
+console.log(objeto.key(0))
+console.log(objeto[objeto.key(0)])
+
 // 3. Duas maneiras de copiar objetos
 
 var novo_objeto1 = {}
