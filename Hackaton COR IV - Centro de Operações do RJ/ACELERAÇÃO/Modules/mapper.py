@@ -64,13 +64,14 @@ def draw_rectangles(
     Map, data, loc, popup, tooltip,
     cmap=None, lut=1, LE=None,
     stroke=True, weight=3, fill=True,
-    fill_color=None, fill_opacity=.3
+    fill_color=None, fill_opacity=.3,
+    ignore_outliers=False
 ):
     cMap = plt.get_cmap(cmap, lut=lut)
     if LE is None: LE = le().fit(data.index)
     labels = pd.Series(LE.transform(data.index), index=data.index)
 
-    for index, row in areas.iterrows():
+    for index, row in data.iterrows():
         c = rgba_cmap(cMap, labels.loc[index])
         fill_c = (c if fill_color is None else fill_color)
         folium.Rectangle(

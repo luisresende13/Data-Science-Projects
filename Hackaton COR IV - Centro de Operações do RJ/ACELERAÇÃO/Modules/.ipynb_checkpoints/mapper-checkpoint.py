@@ -70,7 +70,7 @@ def draw_rectangles(
     if LE is None: LE = le().fit(data.index)
     labels = pd.Series(LE.transform(data.index), index=data.index)
 
-    for index, row in areas.iterrows():
+    for index, row in data.iterrows():
         c = rgba_cmap(cMap, labels.loc[index])
         fill_c = (c if fill_color is None else fill_color)
         folium.Rectangle(

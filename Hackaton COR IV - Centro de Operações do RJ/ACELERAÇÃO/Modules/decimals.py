@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np, pandas as pd
 
 #### Compute and update order of magnitude of float value or series.
 
@@ -6,7 +6,7 @@ def orderOfMagnitude(number):
     return np.floor(np.log10(abs(number)))
 
 def correctMagnitude(number, mag=1):
-    if type(number)==float:
+    if type(number) is float:
         magnitude = orderOfMagnitude(number)
         return number / 10 ** ( orderOfMagnitude(number) - mag )
     else:

@@ -4,7 +4,6 @@ from IPython.display import clear_output as co
 def googleReverseGeocode(
     coordinates, coord_ids=None,
     result_type=None, location_type=None,
-    language='pt-BR',
     googleAPIKey=None,
     keep_cols =  ['place_id', 'types', 'formatted_address'],
     drop_cols = ['address_components', 'geometry', 'plus_code'], # if included, 'keep_cols' argument is ignored

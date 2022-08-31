@@ -8,18 +8,30 @@ cmaps = [
     'tab10', 'tab20', 'tab20b', 'tab20c'
 ]
 
-def connect_coordinates_colored(lat, lng, groups, numbers, cmap='tab10', title='', figsize=None, connect=True, scatter=True):
+def connect_coordinates_colored(
+    lat, lng, groups, numbers=None,
+    cmap='tab10', title='', figsize=None,
+    connect=True, scatter=True, ms=30
+):
     cmap = plt.get_cmap(cmap)
     labels = pd.Series(le().fit_transform(groups), index=groups.index)
     plt.figure(figsize=figsize)
     for label in labels.unique():
-        group_index = numbers[labels==label].sort_values().index
+        group_msk = labels==label
+        if numbers is not None:
+            group_index = numbers[group_msk].sort_values().index
+        else:
+            group_index = labels[group_msk].index
         group_lat, group_lng = lat.loc[group_index], lng.loc[group_index]
         if connect: plt.plot(group_lat, group_lng)
-        if scatter: plt.scatter(group_lat, group_lng, s=30)
-    plt.xlabel('Latitude'); plt.ylabel('Longitude'); plt.title(title); plt.show()
+        if scatter: plt.scatter(group_lat, group_lng, s=ms)
+    plt.xlabel('Longitude'); plt.ylabel('Latitude');
+    plt.title(title.format(len(labels.unique()))); plt.show()
 
-def min_group_size_progression_plot(data, coord_cols, group_col, max_incidents=15, color='blue', figsize=None, pause=0.3):
+def min_group_size_progression_plot(
+    data, coord_cols, group_col, max_incidents=15,
+    color='blue', figsize=None, pause=0.3
+):
     route_count = data[group_col].value_counts(); recurrence = []
     for min_incidents in range(max_incidents+1):
         rec_routes = route_count[route_count>=min_incidents]

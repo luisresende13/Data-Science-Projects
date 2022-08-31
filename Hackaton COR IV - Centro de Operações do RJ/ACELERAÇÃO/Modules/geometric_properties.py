@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd, numpy as np
 from geopy.distance import geodesic
 
 def centroid(lat, lng):
@@ -27,6 +27,7 @@ def clusters_geometry(lat, lng, labels, include_box=False, include_center_radius
         columns=['lat_centroid', 'lng_centroid'],
         index=labels.index
     )
+    centroids['label_count'] = labels.value_counts().loc[labels].values
     
     boxes = pd.DataFrame(
         list(map(lambda label: boxes[label], labels)),
@@ -46,5 +47,9 @@ def clusters_geometry(lat, lng, labels, include_box=False, include_center_radius
         centroids['horizontal_perimeter'] = distance(centroids[['lat_min', 'lng_center']], centroids[['lat_max', 'lng_center']])
         centroids['vertical_perimeter'] = distance(centroids[['lat_center', 'lng_min']], centroids[['lat_center', 'lng_max']])
         centroids['radius'] = centroids[['horizontal_perimeter', 'vertical_perimeter']].max(1) / 2
-            
+        centroids['area_box'] = centroids['horizontal_perimeter'] * centroids['vertical_perimeter']
+        centroids['area_circle'] = np.pi * centroids['radius'] ** 2
+        centroids['density_box'] = centroids['label_count'] / centroids['area_box']
+        centroids['density_circle'] = centroids['label_count'] / centroids['area_circle']
+
     return centroids
