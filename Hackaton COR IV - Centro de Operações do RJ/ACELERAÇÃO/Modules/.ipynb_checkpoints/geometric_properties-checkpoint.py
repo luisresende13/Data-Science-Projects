@@ -51,6 +51,5 @@ def clusters_geometry(lat, lng, labels, include_box=False, include_center_radius
         centroids['area_circle'] = np.pi * centroids['radius'] ** 2
         centroids['density_box'] = centroids['label_count'] / centroids['area_box']
         centroids['density_circle'] = centroids['label_count'] / centroids['area_circle']
-        
-            
+
     return centroids

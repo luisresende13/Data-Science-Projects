@@ -1,4 +1,4 @@
-import pandas as pd, matplotlib.pyplot as plt, seaborn as sns; sns.set()
+import pandas as pd, numpy as np, matplotlib.pyplot as plt, seaborn as sns; sns.set()
 from sklearn.preprocessing import LabelEncoder as le
 from IPython.display import clear_output as co
 
@@ -7,6 +7,24 @@ cmaps = [
     'Dark2', 'Set1', 'Set2', 'Set3',
     'tab10', 'tab20', 'tab20b', 'tab20c'
 ]
+
+def filter_group_size(data, group_col, min_members=10):
+    label_cnt = data[group_col].value_counts()
+    top_labels = label_cnt[label_cnt > min_members].index
+    top_msk = data[group_col].isin(top_labels)
+    return data[top_msk]
+
+def cluster_algo_comparison(x, y, data, algs, hide_outliers=False, title='{}/{}', figsize=(12, 7.5), n_cols=2): 
+    fig = plt.figure(figsize=figsize, tight_layout=True)
+    n_rows =  len(algs)//n_cols if len(algs)%n_cols==0 else len(algs)//2 + 1
+    axs = (fig.add_subplot(n_rows, n_cols, i) for i in range(1, len(algs)+1))
+    for ax, alg in zip(axs, algs):
+        labels = np.unique(alg.labels_)
+        for label in labels:
+            if hide_outliers and label==-1: continue
+            ax.scatter(x, y, data=data[alg.labels_==label])
+        ax.set(title=title.format(type(alg).__name__, labels.shape[0]))
+    return axs
 
 def connect_coordinates_colored(
     lat, lng, groups, numbers=None,
@@ -111,3 +129,34 @@ def atemporal_evolution_plot(
         )
         if path is not None: plt.savefig(path.format(date if freq else index))
         plt.show(); plt.pause(pause); co(wait=True)
+
+def min_samples_clusters_animation(
+    data, group_col, max_samples_stop=0.5, freq=0.1,
+    coord_cols=['EVENTO_LONGITUDE', 'EVENTO_LATITUDE'], order_col='street_number',
+    connect=False, scatter=True,
+    cmap=None, figsize=(20, 12),
+    title='Incident coordinates Connected and Colored Line & Scatter Plot',
+):
+    
+    label_cnt = data[group_col].value_counts()
+    max_samples = label_cnt.max()
+    min_samples = label_cnt.min()
+    size_range = max_samples - min_samples
+    
+    if type(max_samples_stop) is float:
+        min_samples_i = min_samples + (np.arange(0, max_samples_stop, freq) * size_range).round(0)
+    elif type(max_samples_stop) is int:
+        min_samples_i = np.arange(min_samples, max_samples_stop+1, freq)
+        
+    for min_samples in min_samples_i:
+
+        top_data = filter_group_size(data, group_col=group_col, min_members=min_samples)
+
+        co(wait=True)
+        connect_coordinates_colored(
+            top_data[coord_cols[0]], top_data[coord_cols[1]],
+            top_data[group_col], top_data[order_col], cmap=cmap,
+            connect=connect, scatter=scatter,
+            title=title,
+            figsize=figsize,
+        )
