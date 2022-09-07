@@ -1,5 +1,9 @@
-import pandas as pd
-import numpy as np
+import pandas as pd, numpy as np
+
+def print_cls_cnt(Y, t_ind, e_ind):
+    cls_cnt = pd.concat([Y[ind].value_counts().rename(col).to_frame() for ind, col in zip([t_ind, e_ind], ['Train set', 'Test set'])], 1)
+    cls_cnt.index.name = 'Class'
+    display(cls_cnt)
 
 class UnderSampleSplit:
     def __init__(
