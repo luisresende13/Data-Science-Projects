@@ -40,19 +40,19 @@ class MinorityGroupSplitUndersample:
         for t_ind, e_ind in splitter.split(X[mino], Y[mino], groups[mino]):
             yt_mino, ye_mino = Y[mino].iloc[t_ind], Y[mino].iloc[e_ind]
             # Undersample train and test majority
-            natural_proportion = 1 / mino.mean() - 1 
+            natural_proportion = 1 / mino.mean() - 1  # (1 - mino.mean()) / mino.mean() => negative/positive ratio
             if self.train_prct is None:
                 train_prct = natural_proportion # Natural proportion is train_prct is None
             else:
                 train_prct = self.train_prct
             yt_majo = Y_majo.sample(int(len(yt_mino) * train_prct), random_state=self.random_state)
             ye_majo = Y_majo.drop(yt_majo.index)
-            if self.test_prct is not None: # Remaining samples if test_prct is None
+            if self.test_prct is not None: # ALl samples left for testing if test_prct is 'None'
                 if self.test_prct == 'natural':
                     test_prct = natural_proportion
                 else:
                     test_prct = self.test_prct
-                ye_majo = ye_majo.drop(yt_majo.index).sample(int(len(ye_mino) * test_prct), random_state=self.random_state)
+                ye_majo = ye_majo.sample(int(len(ye_mino) * test_prct), random_state=self.random_state)
             t_index.append(pd.concat([yt_mino, yt_majo]).index.tolist())
             e_index.append(pd.concat([ye_mino, ye_majo]).index.tolist())
         return zip(t_index, e_index)

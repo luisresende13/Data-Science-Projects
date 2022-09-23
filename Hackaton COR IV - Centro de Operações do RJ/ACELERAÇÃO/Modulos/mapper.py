@@ -12,7 +12,6 @@ def plot_markers(
     exclude=["Bolsão d'água em via"],
     touch_coord=True, return_encoder=False, 
 ):
-    
     if touch_coord: Map.add_child(folium.LatLngPopup())
 
     if group_col is not None:
@@ -26,7 +25,7 @@ def plot_markers(
             row_group = row[group_col]
             c = rgba_cmap(cMap, groups.loc[index])
         else:
-            row_group, c = None, 'blue'
+            row_group, c = None, 'red'
         if row_group not in exclude:
             folium.CircleMarker(
                 location=list(coord), radius=radius,

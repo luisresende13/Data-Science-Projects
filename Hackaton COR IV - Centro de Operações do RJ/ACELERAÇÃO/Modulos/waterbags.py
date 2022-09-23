@@ -19,12 +19,12 @@ class waterbag_project:
             'waterbags': 'Dados/Catalog/water_bag_catalog_google.csv',
             'clusters': 'Dados/Clusters/clusters_bolsões_micro.csv',
             'inmet': 'Dados/Clean/INMET.csv',
-            'alerta_rio': 'Dados/Clean/ALERTA-RIO.csv',
+            'alerta_rio': '../../../Dados/Desafio COR-Rio IV/Clean/ALERTA-RIO.csv',
             'waterbags_timeserie': 'Dados/Transform/série_bolsões.csv',
             'waterbags_timeserie_clusters': 'Dados/Transform/série_bolsões_clusters.csv',
-            'time_features': 'Dados/Feature Engineering/tim_features.csv',
-            'inmet_eng': 'Dados/Feature Engineering/tim_features.csv',
-            'feat_eng': 'Dados/Feature Engineering/',
+            'feat_eng': '../../../Dados/Desafio COR-Rio IV/Engenharia de Features/',
+            'time_features': 'time_features.csv',
+            'inmet_eng': 'inmet_2-84h.csv',
             'alerta_eng': ('alertario_15-45min.csv', 'alertario_1-4h.csv', 'alertario_5-84h.csv'),
         }
         self.load_data(self.path)
@@ -66,10 +66,10 @@ class waterbag_project:
         # Join engineered features 
         if self.data is not None:
             if self.time_features:
-                time_feats = pd.read_csv(path['time_features'], index_col=0)
+                time_feats = pd.read_csv(self.path['feat_eng'] + path['time_features'], index_col=0)
                 self.data = time_feats.join(self.data, how='right')            
             if self.inmet_features:
-                inmet_eng = pd.read_csv(self.path['inmet_eng'], index_col=0)
+                inmet_eng = pd.read_csv(self.path['feat_eng'] + self.path['inmet_eng'], index_col=0)
                 self.data = self.data.join(inmet_eng, how='left')
             if self.alerta_features:
                 alerta_eng = pd.concat([

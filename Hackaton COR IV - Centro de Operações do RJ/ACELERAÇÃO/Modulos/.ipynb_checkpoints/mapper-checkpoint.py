@@ -26,7 +26,7 @@ def plot_markers(
             row_group = row[group_col]
             c = rgba_cmap(cMap, groups.loc[index])
         else:
-            row_group, c = None, 'blue'
+            row_group, c = None, 'red'
         if row_group not in exclude:
             folium.CircleMarker(
                 location=list(coord), radius=radius,
@@ -64,7 +64,8 @@ def draw_rectangles(
     Map, data, loc, popup, tooltip,
     cmap=None, lut=1, LE=None,
     stroke=True, weight=3, fill=True,
-    fill_color=None, fill_opacity=.3
+    fill_color=None, fill_opacity=.3,
+    ignore_outliers=False
 ):
     cMap = plt.get_cmap(cmap, lut=lut)
     if LE is None: LE = le().fit(data.index)
