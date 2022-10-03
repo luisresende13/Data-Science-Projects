@@ -1,7 +1,7 @@
 from sklearn.preprocessing import MinMaxScaler as mms, LabelEncoder as le
 
-def TimeseriesTransformPipeline(data, min_time=None, cut=None, drop_empty_cols=False, label_encode=None, scale=False, interpolate='linear', fillna='min', transform_report=False):
-    
+def TimeseriesTransformPipeline(data, min_time=None, cut=None, drop_empty_cols=False, label_encode=None, scale=False, interpolate=None, fillna=None, transform_report=False):
+
     X = data.copy()
     print('Initial data:', X.shape)
     
@@ -13,7 +13,7 @@ def TimeseriesTransformPipeline(data, min_time=None, cut=None, drop_empty_cols=F
         X = X.iloc[:cut].copy()
 
     if drop_empty_cols: # Drop X empty columns and rows
-        X.dropna(1, how='all', inplace=True)
+        X.dropna(axis=1, how='all', inplace=True)
         print('Drop empty columns: ', X.shape)
 
     if label_encode is not None:
@@ -30,6 +30,8 @@ def TimeseriesTransformPipeline(data, min_time=None, cut=None, drop_empty_cols=F
         for col in X:
             if fillna=='min':
                 fill_value = X[col].min()
+            elif fillna=='mean':
+                fill_value = X[col].mean()
             else:
                 fill_value = 0
             X[col].fillna(fill_value, inplace=True)

@@ -53,28 +53,33 @@ class waterbag_project:
 
         # Combine Inmet and Alerta-Rio Stations Time Series by down or up Sampling
 
+        if self.freq is not None:
             # Downsample high frequency time serie
-        if self.freq == 'downsample':
-            downsample = alerta_rio.resample('H').first()
-            self.data = inmet.join(downsample, how='outer') # downsample = None
-            
+            if self.freq == 'downsample':
+                downsample = alerta_rio.resample('H').first()
+                self.data = inmet.join(downsample, how='outer') # downsample = None
             # Upsample less frequent time serie
-        elif self.freq == 'upsample':
-            upsample = inmet.resample('15Min').pad()
-            self.data = upsample.join(alerta_rio, how='outer') # upsample = None
+            elif self.freq == 'upsample':
+                upsample = inmet.resample('15Min').pad()
+                self.data = upsample.join(alerta_rio, how='outer') # upsample = None
+#         self.data.index = pd.DatetimeIndex(self.data.index)
 
+                
         # Join engineered features 
         if self.data is not None:
             if self.time_features:
                 time_feats = pd.read_csv(self.path['feat_eng'] + path['time_features'], index_col=0)
-                self.data = time_feats.join(self.data, how='right')            
+                time_feats.index = pd.DatetimeIndex(time_feats.index)
+                self.data = time_feats.join(self.data, how='right')
             if self.inmet_features:
                 inmet_eng = pd.read_csv(self.path['feat_eng'] + self.path['inmet_eng'], index_col=0)
+                inmet_eng.index = pd.DatetimeIndex(inmet_eng.index)
                 self.data = self.data.join(inmet_eng, how='left')
             if self.alerta_features:
                 alerta_eng = pd.concat([
                     pd.read_csv(self.path['feat_eng'] + file, index_col=0) for file in self.path['alerta_eng']
                 ], 1)
+                alerta_eng.index = pd.DatetimeIndex(alerta_eng.index)
                 self.data = self.data.join(alerta_eng, how='left')
 
             # Reindex target labels to new datatime index

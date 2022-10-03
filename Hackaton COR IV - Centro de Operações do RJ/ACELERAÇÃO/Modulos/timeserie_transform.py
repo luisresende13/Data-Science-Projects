@@ -13,7 +13,7 @@ def TimeseriesTransformPipeline(data, min_time=None, cut=None, drop_empty_cols=F
         X = X.iloc[:cut].copy()
 
     if drop_empty_cols: # Drop X empty columns and rows
-        X.dropna(1, how='all', inplace=True)
+        X.dropna(axis=1, how='all', inplace=True)
         print('Drop empty columns: ', X.shape)
 
     if label_encode is not None:
