@@ -1,7 +1,29 @@
-import pandas as pd, numpy as np
+import pandas as pd, numpy as np, matplotlib.pyplot as plt
 from sklearn.model_selection import GroupShuffleSplit, GroupKFold, RepeatedKFold, cross_validate
 from itertools import product
 from IPython.display import clear_output as co
+from Modulos.probability import predict_proba, scale_proba
+
+
+#### Metrics and scoring functions
+from sklearn.metrics import (
+    make_scorer, recall_score, precision_score, f1_score
+)
+
+recall_0 = make_scorer(recall_score, pos_label=0, zero_division=1)
+recall_1 = make_scorer(recall_score, pos_label=1, zero_division=1)
+precision_0 = make_scorer(precision_score, pos_label=0, zero_division=1)
+precision_1 = make_scorer(precision_score, pos_label=1, zero_division=1)
+f1_0 = make_scorer(f1_score, pos_label=0, zero_division=1)
+f1_1 = make_scorer(f1_score, pos_label=1, zero_division=1)
+
+scoring = {
+    'accuracy': 'accuracy', 'recall': 'recall',
+    'precision': 'precision', # 'f1': 'f1',
+    'recall-0': recall_0, 'recall-1': recall_1,
+    'precision-0': precision_0, 'precision-1': precision_1,
+    'f1-0': f1_0, 'f1-1': f1_1
+}
 
 # Label consecutive flags groups
 def groupConsecutiveFlags(ts, outlier_mark=-1):
@@ -15,6 +37,128 @@ def groupConsecutiveFlags(ts, outlier_mark=-1):
             groups.append(outlier_mark)
         prev_label = label
     return pd.Series(groups, index=ts.index, name='group')
+
+def cross_val_predict_proba(estimator, X, Y, cv, calibrate=None):
+    yprob_cv = []
+    for i, (train, test) in enumerate(cv):
+        try:
+            estimator.fit(X.iloc[train], Y.iloc[train])
+            yprob = predict_proba(estimator, X.iloc[test])
+            # Optional scale probabilities
+            if calibrate is not None:
+                yprob = scale_proba(yprob, threshold=calibrate, limit=None)
+            yprob_cv.append(yprob.values)
+        except Exception as e:
+            yprob_cv.append(np.array([np.nan] * len(test)))
+            print('cross_val_predict_proba error:', e)
+        co(True); print(f'cv: {i+1}/{len(cv)}')
+    return yprob_cv
+
+class group_metrics:
+
+    def group_recall(y, yhat, grps, metric='recall-1'):
+        grp_df = []
+        for group in grps.unique():
+            if group != -1:
+                msk = grps==group
+                grp_acc = (y[msk] == yhat[msk]).mean()
+                grp_df.append([group, grp_acc, int(grp_acc > 0.0)])        
+        return pd.DataFrame(grp_df, columns=['label', metric, metric + ' group']).set_index('label')
+
+
+    def group_precision_recall_stats(ye, yhat, groups, groups_hat):
+
+        grp_df = group_metrics.group_recall(ye, yhat, groups)
+        pred_df = group_metrics.group_recall(ye, yhat, groups_hat, metric='precision-1')
+
+        print('Target groups:', grp_df.shape[0], '\n')
+        display(grp_df.mean())
+        print('\nPrediction groups:', pred_df.shape[0], '\n')
+        display(pred_df.mean())
+
+        fig, ax = plt.subplots(1, 2, figsize=(11, 3))
+        ax[0] = grp_df['recall-1'].plot.hist(ax=ax[0], title='Group Recall')
+        ax[1] = pred_df['precision-1'].plot.hist(ax=ax[1], title='Group Precision')
+        return ax
+
+    def group_precision_recall(y, yhat, groups_y, groups_hat):
+
+        ### Inside groups
+        grp_df = group_metrics.group_recall(y, yhat, groups_y).mean()
+        grp_df['support-1'] = len(groups_y.unique()) - 1
+
+        ### Inside positive predictions
+        pred_df = group_metrics.group_recall(y, yhat, groups_hat, metric='precision-1').mean()
+        pred_df['support-1 group'] = len(groups_hat.unique()) - 1
+
+        return (df.add_suffix(' avg') for df in (grp_df, pred_df))
+
+    def group_precision_recall_curve(y, yprob, groups_y, num=20):
+
+        thresholds = np.linspace(yprob.min(), yprob.max(), num)
+        grp_tunning, pred_tunning = [], []
+        for thresh in thresholds:
+
+            #### Probability prediction and groups
+            yhat = (yprob > thresh).astype('int')
+            groups_hat = groupConsecutiveFlags(ts=yhat)
+
+            grp_df, pred_df = group_metrics.group_precision_recall(y, yhat, groups_y, groups_hat)
+
+            grp_tunning.append(pd.concat([grp_df, pred_df], axis=0))
+
+        grp_curve = pd.DataFrame(grp_tunning, index=thresholds)
+        grp_curve['f1-1 avg'] = grp_curve[['precision-1 avg', 'recall-1 avg']].mean(1)
+        grp_curve['f1-1 group avg'] = grp_curve[['precision-1 group avg', 'recall-1 group avg']].mean(1)
+
+        return grp_curve
+
+    def group_precision_recall_plot(y, yprob, groups_y, num=20):
+
+        avg_cols = ['precision-1 avg', 'recall-1 avg', 'f1-1 avg']
+        group_cols = ['precision-1 group avg', 'recall-1 group avg', 'f1-1 group avg']
+
+        grp_curve = group_metrics.group_precision_recall_curve(y, yprob, groups_y, num)
+
+        fig, ax = plt.subplots(2, 2, figsize=(12, 7), sharey=True)
+        grp_curve.plot(y=avg_cols, ax=ax[0][0])
+        grp_curve.plot(x='recall-1 avg', y=['precision-1 avg', 'f1-1 avg'], ax=ax[0][1])
+        grp_curve.plot(y=group_cols, ax=ax[1][0])
+        grp_curve.plot(x='recall-1 group avg', y=['precision-1 group avg', 'f1-1 group avg'], ax=ax[1][1])
+        ax[0][0].set_title('Average Group Precision-Recall by Threshold')
+        ax[0][1].set_title('Average Group Precision-Recall Curve')
+        ax[1][0].set_title('Group Precision-Recall by Threshold')
+        ax[1][1].set_title('Group Precision-Recall Curve')
+        return ax, grp_curve
+
+    def recall_group(y, yhat, metric='recall-1'):
+        if metric=='recall-1':
+            grps = groupConsecutiveFlags(y)
+        elif metric=='precision-1':
+            grps = groupConsecutiveFlags(yhat)
+        if (grps == -1).all():
+            grp_df = [[np.nan, np.nan, np.nan]]
+        else:
+            grp_df = []
+            for group in np.unique(grps):
+                if group != -1:
+                    msk = grps==group
+                    grp_acc = (y[msk] == yhat[msk]).mean()
+                    grp_df.append([group, grp_acc, int(grp_acc > 0.0)])        
+        return pd.DataFrame(grp_df, columns=['label', metric + ' avg', metric + ' group']).set_index('label')
+
+    def group_scorer(estimator, X, y):
+        yhat = pd.Series(estimator.predict(X), index=X.index)
+        recall = group_metrics.recall_group(y, yhat, metric='recall-1').mean()
+        precision = group_metrics.recall_group(y, yhat, metric='precision-1').mean()
+        score = pd.concat([precision, recall])
+        score['recall-1'] = recall_1(estimator, X, y)
+        score['precision-1'] = precision_1(estimator, X, y)
+        score.sort_index(inplace=True)
+        score['f1-1'] = score[['recall-1', 'precision-1']].mean()
+        score['f1-1 avg'] = score[['recall-1 avg', 'precision-1 avg']].mean()
+        score['f1-1 group'] = score[['recall-1 group', 'precision-1 group']].mean()
+        return score.to_dict()
 
 # Minority Group Split Undersample method
 class MinorityGroupSplitUndersample:
