@@ -97,3 +97,66 @@ class waterbag_project:
             clusters = pd.read_csv(path['clusters'], index_col=0)
             waterbags[['EVENTO_INICIO', 'EVENTO_FIM']] = waterbags[['EVENTO_INICIO', 'EVENTO_FIM']].apply(pd.to_datetime)
             self.waterbags = waterbags.join(clusters, how='outer')
+
+
+from sklearn.preprocessing import LabelEncoder as le
+
+def custom_preprocessing(X, drop_empty_cols=False, label_encode=None, interpolate='linear', fillna='mean'):
+
+    print('Initial shape:', X.shape)
+
+    if drop_empty_cols: # Drop X empty columns and rows
+        X.dropna(axis=1, how='all', inplace=True)
+        print('Empty columns removed: ', X.shape)
+
+    if label_encode is not None:
+        print('Label columns encoded:', list(label_encode))
+        LEi = {}
+        for col in label_encode:
+            LEi[col] = le().fit(X[col])
+            X[col] = LEi[col].transform(X[col])
+
+    if interpolate is not None: # Interpolate X missing values
+        print('Interpolation:', interpolate)
+        X = X.interpolate(interpolate)
+
+    if fillna is not None: # Fill missing values with the minimum column value
+        print('Fill missing values:', fillna)
+        for col in X:
+            if fillna=='min':
+                fill_value = X[col].min()
+            elif fillna=='mean':
+                fill_value = X[col].mean()
+            else:
+                fill_value = 0
+            X[col].fillna(fill_value, inplace=True)
+
+    if label_encode is not None:
+        return X, LEi
+    return X
+
+from Modulos.imbalanced_selection import groupConsecutiveFlags
+
+# Target selection and train/test split
+def select_target(Yi, X, target_id, periods_ahead=None, shift=0, names=None, fill_value=0.0):
+    if names is not None: print(f'Selected Target: {names[int(target_id)]} - id: {target_id}', '\n')
+
+    # Select target
+    Y = Yi[str(target_id)].loc[X.index].copy()
+    y_cnt = Y.value_counts().to_frame('Target')
+
+    ### Target transformation
+    if periods_ahead is not None:
+        Y = (Y.rolling(periods_ahead, closed='left', min_periods=1).sum().shift(1 - periods_ahead) > 0).astype('float')
+        print('Target range:', periods_ahead)
+    if shift is not None:
+        Y = Y.shift(shift, fill_value=0.0)
+        print('Target shift:', shift)
+
+    y_cnt = pd.concat([y_cnt, Y.value_counts().to_frame('Transformed Target')], axis=1)
+
+    # Group target positive class labels by being consecutive in time (group evaluation strategy)
+    groups = groupConsecutiveFlags(ts=Y)
+    
+    return Y, groups, y_cnt
+

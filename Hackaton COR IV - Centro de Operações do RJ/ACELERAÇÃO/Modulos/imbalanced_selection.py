@@ -19,7 +19,7 @@ f1_1 = make_scorer(f1_score, pos_label=1, zero_division=1)
 
 scoring = {
     'accuracy': 'accuracy', 'recall': 'recall',
-    'precision': 'precision', # 'f1': 'f1',
+    'precision': 'precision', 'f1': 'f1',
     'recall-0': recall_0, 'recall-1': recall_1,
     'precision-0': precision_0, 'precision-1': precision_1,
     'f1-0': f1_0, 'f1-1': f1_1

@@ -1,4 +1,4 @@
-import pandas as pd, matplotlib.pyplot as plt
+import pandas as pd, numpy as np, matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler as mms
 from sklearn.metrics import classification_report as cr, precision_recall_curve
 from IPython.display import clear_output as co
@@ -74,3 +74,37 @@ def multi_window_prob(ye, yprob, windows, n_cols, title='Probability {} - {}', p
         ax.set(title=title.format(time_min, time_max))
     if path is not None: plt.savefig(path)
     return fig, axs
+
+def cross_val_predict_proba(estimator, X, Y, cv, calibrate=None):
+    yprob_cv, fail = [], []
+    for i, (train, test) in enumerate(cv):
+        try:
+            estimator.fit(X.iloc[train], Y.iloc[train])
+            yprob = predict_proba(estimator, X.iloc[test])
+            # Optional scale probabilities
+            if calibrate is not None:
+                yprob = scale_proba(yprob, threshold=calibrate, limit=None)
+            yprob_cv.append(yprob.values)
+        except Exception as e:
+            yprob_cv.append(np.array([np.nan] * len(test)))
+            fail.append(e)
+        co(True); print(f'cv: {i+1}/{len(cv)}')
+    if len(fail): print('Errors:', fail)
+    return yprob_cv
+
+
+def time_serie_cross_validation_plot(scr_time, mean_1=None):
+    scr_cols = np.array(['train_precision-1', 'train_recall-1', 'train_f1-1', 'test_precision-1', 'test_recall-1', 'test_f1-1'], dtype='object')
+    stats_cols = ['mean', 'std', 'min', '50%', 'max']
+    for col_type in ['', ' avg', ' group']:
+        fig, ax = plt.subplots(1, 2, figsize=(18, 4))
+        scr_time[scr_cols[3:6] + col_type].plot(marker='o', ms=5, ax=ax[0])
+        scr_time[scr_cols[3:6] + col_type].rolling(100, min_periods=1).mean().plot(marker='o', ms=5, ax=ax[1])
+        if mean_1 is not None:
+            for i in range(len(ax)):
+                mean_1.plot(linestyle='--', marker='.', ax=ax[i])
+        plt.show()
+    for col_type in ['', ' avg', ' group']:
+        ### Average temporal performance
+        display(scr_time.describe().loc[['mean', '50%', 'std'], scr_cols + col_type])
+    return
