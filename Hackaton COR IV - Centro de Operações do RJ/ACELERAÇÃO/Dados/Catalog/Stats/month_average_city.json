@@ -1,0 +1,86 @@
+[
+    {
+        "month": 1,
+        "mean": 70.75,
+        "amin": 38,
+        "amax": 111,
+        "month_name": "Janeiro"
+    },
+    {
+        "month": 2,
+        "mean": 130.5,
+        "amin": 58,
+        "amax": 210,
+        "month_name": "Fevereiro"
+    },
+    {
+        "month": 3,
+        "mean": 84.5,
+        "amin": 62,
+        "amax": 118,
+        "month_name": "Mar\u00e7o"
+    },
+    {
+        "month": 4,
+        "mean": 73.5,
+        "amin": 2,
+        "amax": 188,
+        "month_name": "Abril"
+    },
+    {
+        "month": 5,
+        "mean": 54.333333333333336,
+        "amin": 40,
+        "amax": 74,
+        "month_name": "Maio"
+    },
+    {
+        "month": 6,
+        "mean": 14.0,
+        "amin": 11,
+        "amax": 17,
+        "month_name": "Junho"
+    },
+    {
+        "month": 7,
+        "mean": 11.0,
+        "amin": 9,
+        "amax": 13,
+        "month_name": "Julho"
+    },
+    {
+        "month": 8,
+        "mean": 19.25,
+        "amin": 7,
+        "amax": 27,
+        "month_name": "Agosto"
+    },
+    {
+        "month": 9,
+        "mean": 15.75,
+        "amin": 3,
+        "amax": 36,
+        "month_name": "Setembro"
+    },
+    {
+        "month": 10,
+        "mean": 31.0,
+        "amin": 18,
+        "amax": 52,
+        "month_name": "Outubro"
+    },
+    {
+        "month": 11,
+        "mean": 45.25,
+        "amin": 34,
+        "amax": 65,
+        "month_name": "Novembro"
+    },
+    {
+        "month": 12,
+        "mean": 116.0,
+        "amin": 31,
+        "amax": 271,
+        "month_name": "Dezembro"
+    }
+]

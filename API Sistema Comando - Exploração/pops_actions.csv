@@ -1,0 +1,320 @@
+,sigla,orgao,acao,id,titulo
+0,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,24,Abalroamento
+1,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,24,Abalroamento
+2,Light,Light Serviços de Eletricidade S.A.,Desligar energia,24,Abalroamento
+3,Light,Light Serviços de Eletricidade S.A.,Restabelecer fornecimento de energia,24,Abalroamento
+4,RioLuz,Companhia Municipal de Energia e Iluminação,Desligar energia,24,Abalroamento
+5,RioLuz,Companhia Municipal de Energia e Iluminação,Restabelecer fornecimento de energia,24,Abalroamento
+6,SECONSERVA,Secretaria Municipal de Conservação,Obra de restauração,24,Abalroamento
+7,PortoNovo,Porto Novo S.A.,Organizar o trânsito,24,Abalroamento
+8,LAMSA,Linha Amarela S.A.,Organizar o trânsito,24,Abalroamento
+9,COMLURB,Companhia de Limpeza Urbana,Comunicar,34,Acidente ambiental
+10,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,34,Acidente ambiental
+11,GM,Empresa Municipal de Vigilância,Isolar local,34,Acidente ambiental
+12,DefesaCivil,Secretaria Municipal de Defesa Civil,Comunicar,34,Acidente ambiental
+13,COR,Centro de Operações Rio,Comunicar COMLURB,34,Acidente ambiental
+14,COR,Centro de Operações Rio,Comunicar Defesa Civil,34,Acidente ambiental
+15,COR,Centro de Operações Rio,Comunicar SMAC,34,Acidente ambiental
+16,SMAC,Secretaria Municipal de Meio Ambiente,Comunicar,34,Acidente ambiental
+17,SUBPREFEITURA,Subprefeitura,Comunicar,34,Acidente ambiental
+18,CET-RIO,Companhia de Engenharia de Tráfego,Desfazer o acidente,13,Acidente com queda de carga
+19,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,13,Acidente com queda de carga
+20,COMLURB,Companhia de Limpeza Urbana,Limpar Via,13,Acidente com queda de carga
+21,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,13,Acidente com queda de carga
+22,INEA,Instituto Estadual do Ambiente,Multar transporte irregular,13,Acidente com queda de carga
+23,INEA,Instituto Estadual do Ambiente,Vistoriar impacto,13,Acidente com queda de carga
+24,CET-RIO,Companhia de Engenharia de Tráfego,Desfazer o acidente,2,Acidente com vítima(s)
+25,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,2,Acidente com vítima(s)
+26,GM,Empresa Municipal de Vigilância,Desfazer o acidente,2,Acidente com vítima(s)
+27,GM,Empresa Municipal de Vigilância,Organizar o trânsito,2,Acidente com vítima(s)
+28,BOMBEIROS,Corpo de Bombeiros,Atender vítima(s),2,Acidente com vítima(s)
+29,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,2,Acidente com vítima(s)
+30,PM,Polícia Militar,Registrar o acidente,2,Acidente com vítima(s)
+31,Policia Civil,Polícia Civil,Realizar perícia,2,Acidente com vítima(s)
+32,PortoNovo,Porto Novo S.A.,Desfazer o acidente,2,Acidente com vítima(s)
+33,PortoNovo,Porto Novo S.A.,Organizar o trânsito,2,Acidente com vítima(s)
+34,LAMSA,Linha Amarela S.A.,Desfazer o acidente,2,Acidente com vítima(s)
+35,LAMSA,Linha Amarela S.A.,Organizar o trânsito,2,Acidente com vítima(s)
+36,SUBPREFEITURA,Subprefeitura,Comunicar,2,Acidente com vítima(s)
+37,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,3,Acidente com vítima(s) fatal(is)
+38,SUBPREFEITURA,Subprefeitura,Comunicar,3,Acidente com vítima(s) fatal(is)
+39,Policia Civil,Polícia Civil,Realizar perícia,3,Acidente com vítima(s) fatal(is)
+40,PM,Polícia Militar,Registrar o acidente,3,Acidente com vítima(s) fatal(is)
+41,LAMSA,Linha Amarela S.A.,Organizar o trânsito,3,Acidente com vítima(s) fatal(is)
+42,CET-RIO,Companhia de Engenharia de Tráfego,Desfazer o acidente,3,Acidente com vítima(s) fatal(is)
+43,PortoNovo,Porto Novo S.A.,Desfazer o acidente,3,Acidente com vítima(s) fatal(is)
+44,LAMSA,Linha Amarela S.A.,Desfazer o acidente,3,Acidente com vítima(s) fatal(is)
+45,PM,Polícia Militar,Solicitar perícia,3,Acidente com vítima(s) fatal(is)
+46,BOMBEIROS,Corpo de Bombeiros,Recolher vítima(s) fatal(is),3,Acidente com vítima(s) fatal(is)
+47,PortoNovo,Porto Novo S.A.,Organizar o trânsito,3,Acidente com vítima(s) fatal(is)
+48,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,3,Acidente com vítima(s) fatal(is)
+49,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,3,Acidente com vítima(s) fatal(is)
+50,GM,Empresa Municipal de Vigilância,Desfazer o acidente,3,Acidente com vítima(s) fatal(is)
+51,GM,Empresa Municipal de Vigilância,Organizar o trânsito,3,Acidente com vítima(s) fatal(is)
+52,CET-RIO,Companhia de Engenharia de Tráfego,Desfazer o acidente,1,Acidente/enguiço sem vítima
+53,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,1,Acidente/enguiço sem vítima
+54,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,1,Acidente/enguiço sem vítima
+55,GM,Empresa Municipal de Vigilância,Desfazer o acidente,1,Acidente/enguiço sem vítima
+56,GM,Empresa Municipal de Vigilância,Organizar o trânsito,1,Acidente/enguiço sem vítima
+57,PortoNovo,Porto Novo S.A.,Desfazer o acidente,1,Acidente/enguiço sem vítima
+58,PortoNovo,Porto Novo S.A.,Organizar o trânsito,1,Acidente/enguiço sem vítima
+59,LAMSA,Linha Amarela S.A.,Desfazer o acidente,1,Acidente/enguiço sem vítima
+60,LAMSA,Linha Amarela S.A.,Organizar o trânsito,1,Acidente/enguiço sem vítima
+61,DefesaCivil,Secretaria Municipal de Defesa Civil,Acionar sirenes,30,Acionamento de sirenes
+62,DefesaCivil,Secretaria Municipal de Defesa Civil,Desligar sirenes,30,Acionamento de sirenes
+63,DefesaCivil,Secretaria Municipal de Defesa Civil,Vistoriar local,30,Acionamento de sirenes
+64,AlertaRio,Alerta Rio,Monitoramento meteorológico,30,Acionamento de sirenes
+65,SUBPREFEITURA,Subprefeitura,Comunicar,30,Acionamento de sirenes
+66,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,23,Afundamento de Pista / Buraco na via
+67,SECONSERVA,Secretaria Municipal de Conservação,Corrigir pavimentação,23,Afundamento de Pista / Buraco na via
+68,PortoNovo,Porto Novo S.A.,Organizar o trânsito,23,Afundamento de Pista / Buraco na via
+69,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,31,Alagamento
+70,COMLURB,Companhia de Limpeza Urbana,Desobstruir ralos e bueiros,31,Alagamento
+71,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,31,Alagamento
+72,GM,Empresa Municipal de Vigilância,Organizar o trânsito,31,Alagamento
+73,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,31,Alagamento
+74,BOMBEIROS,Corpo de Bombeiros,Resgatar pessoas,31,Alagamento
+75,SMASDH,Secretaria Municipal de Assistência Social e Direitos Humanos,Abrigar pessoas,31,Alagamento
+76,DefesaCivil,Secretaria Municipal de Defesa Civil,Prevenir perigo,31,Alagamento
+77,DefesaCivil,Secretaria Municipal de Defesa Civil,Resgatar pessoas,31,Alagamento
+78,PortoNovo,Porto Novo S.A.,Organizar o trânsito,31,Alagamento
+79,LAMSA,Linha Amarela S.A.,Organizar o trânsito,31,Alagamento
+80,SUBPREFEITURA,Subprefeitura,Comunicar,31,Alagamento
+81,CET-RIO,Companhia de Engenharia de Tráfego,Desfazer o acidente,6,Alagamentos e enchentes
+82,PortoNovo,Porto Novo S.A.,Organizar o trânsito,6,Alagamentos e enchentes
+83,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,6,Alagamentos e enchentes
+84,BOMBEIROS,Corpo de Bombeiros,Resgatar pessoas,6,Alagamentos e enchentes
+85,COMLURB,Companhia de Limpeza Urbana,Desobstruir ralos e bueiros,6,Alagamentos e enchentes
+86,SMASDH,Secretaria Municipal de Assistência Social e Direitos Humanos,Abrigar pessoas,6,Alagamentos e enchentes
+87,DefesaCivil,Secretaria Municipal de Defesa Civil,Prevenir perigo,6,Alagamentos e enchentes
+88,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,6,Alagamentos e enchentes
+89,PortoNovo,Porto Novo S.A.,Desfazer o acidente,6,Alagamentos e enchentes
+90,SUBPREFEITURA,Subprefeitura,Comunicar,6,Alagamentos e enchentes
+91,DefesaCivil,Secretaria Municipal de Defesa Civil,Resgatar pessoas,6,Alagamentos e enchentes
+92,LAMSA,Linha Amarela S.A.,Organizar o trânsito,6,Alagamentos e enchentes
+93,LAMSA,Linha Amarela S.A.,Desfazer o acidente,6,Alagamentos e enchentes
+94,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,6,Alagamentos e enchentes
+95,CET-RIO,Companhia de Engenharia de Tráfego,Monitorar possíveis interdições,29,Animal em local público
+96,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,29,Animal em local público
+97,GM,Empresa Municipal de Vigilância,Monitorar possíveis interdições,29,Animal em local público
+98,GM,Empresa Municipal de Vigilância,Organizar o trânsito,29,Animal em local público
+99,GM,Empresa Municipal de Vigilância,Recolher o animal,29,Animal em local público
+100,BOMBEIROS,Corpo de Bombeiros,Recolher o animal,29,Animal em local público
+101,PM,Polícia Militar,Registrar o acidente,29,Animal em local público
+102,LAMSA,Linha Amarela S.A.,Monitorar possíveis interdições,29,Animal em local público
+103,LAMSA,Linha Amarela S.A.,Organizar o trânsito,29,Animal em local público
+104,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,22,Atropelamento
+105,GM,Empresa Municipal de Vigilância,Organizar o trânsito,22,Atropelamento
+106,BOMBEIROS,Corpo de Bombeiros,Atender vítima(s),22,Atropelamento
+107,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,22,Atropelamento
+108,PM,Polícia Militar,Registrar o acidente,22,Atropelamento
+109,Policia Civil,Polícia Civil,Realizar perícia,22,Atropelamento
+110,PortoNovo,Porto Novo S.A.,Organizar o trânsito,22,Atropelamento
+111,LAMSA,Linha Amarela S.A.,Organizar o trânsito,22,Atropelamento
+112,SUBPREFEITURA,Subprefeitura,Comunicar,22,Atropelamento
+113,CET-RIO,Companhia de Engenharia de Tráfego,Monitorar possíveis interdições,27,Bloco de Rua
+114,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,27,Bloco de Rua
+115,CICC,Centro Integrado de Comando e Controle,Manter a ordem pública,27,Bloco de Rua
+116,PortoNovo,Porto Novo S.A.,Organizar o trânsito,27,Bloco de Rua
+117,SUBPREFEITURA,Subprefeitura,Comunicar,27,Bloco de Rua
+118,CET-RIO,Companhia de Engenharia de Tráfego,Desfazer o acidente,5,Bolsão d'água em via
+119,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,5,Bolsão d'água em via
+120,COMLURB,Companhia de Limpeza Urbana,Desobstruir ralos e bueiros,5,Bolsão d'água em via
+121,GM,Empresa Municipal de Vigilância,Organizar o trânsito,5,Bolsão d'água em via
+122,SECONSERVA,Secretaria Municipal de Conservação,Drenar água,5,Bolsão d'água em via
+123,PortoNovo,Porto Novo S.A.,Desfazer o acidente,5,Bolsão d'água em via
+124,PortoNovo,Porto Novo S.A.,Organizar o trânsito,5,Bolsão d'água em via
+125,LAMSA,Linha Amarela S.A.,Desfazer o acidente,5,Bolsão d'água em via
+126,LAMSA,Linha Amarela S.A.,Organizar o trânsito,5,Bolsão d'água em via
+127,SUBPREFEITURA,Subprefeitura,Comunicar,5,Bolsão d'água em via
+128,CET-RIO,Companhia de Engenharia de Tráfego,Monitorar possíveis interdições,35,Bueiro
+129,GM,Empresa Municipal de Vigilância,Monitorar possíveis interdições,35,Bueiro
+130,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,35,Bueiro
+131,Concessionária,Concessionária,Monitorar possíveis interdições,35,Bueiro
+132,Light,Light Serviços de Eletricidade S.A.,Verificar fiação,35,Bueiro
+133,RioLuz,Companhia Municipal de Energia e Iluminação,Dar apoio,35,Bueiro
+134,SECONSERVA,Secretaria Municipal de Conservação,Obra de restauração,35,Bueiro
+135,CET-RIO,Companhia de Engenharia de Tráfego,Monitorar possíveis interdições,28,Deslizamento
+136,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,28,Deslizamento
+137,GM,Empresa Municipal de Vigilância,Monitorar possíveis interdições,28,Deslizamento
+138,GM,Empresa Municipal de Vigilância,Organizar o trânsito,28,Deslizamento
+139,DefesaCivil,Secretaria Municipal de Defesa Civil,Informar necessidade de acionar GEORIO,28,Deslizamento
+140,DefesaCivil,Secretaria Municipal de Defesa Civil,Vistoriar local,28,Deslizamento
+141,GEORIO,Fundação Instituto de Geotécnica do Município do Rio de Janeiro,Obra de contenção,28,Deslizamento
+142,GEORIO,Fundação Instituto de Geotécnica do Município do Rio de Janeiro,Vistoriar local,28,Deslizamento
+143,SUBPREFEITURA,Subprefeitura,Comunicar,28,Deslizamento
+144,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,32,Enchente
+145,COMLURB,Companhia de Limpeza Urbana,Desobstruir ralos e bueiros,32,Enchente
+146,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,32,Enchente
+147,GM,Empresa Municipal de Vigilância,Organizar o trânsito,32,Enchente
+148,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,32,Enchente
+149,BOMBEIROS,Corpo de Bombeiros,Resgatar pessoas,32,Enchente
+150,SMASDH,Secretaria Municipal de Assistência Social e Direitos Humanos,Abrigar pessoas,32,Enchente
+151,DefesaCivil,Secretaria Municipal de Defesa Civil,Prevenir perigo,32,Enchente
+152,DefesaCivil,Secretaria Municipal de Defesa Civil,Resgatar pessoas,32,Enchente
+153,PortoNovo,Porto Novo S.A.,Organizar o trânsito,32,Enchente
+154,LAMSA,Linha Amarela S.A.,Organizar o trânsito,32,Enchente
+155,SUBPREFEITURA,Subprefeitura,Comunicar,32,Enchente
+156,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,21,Evento em local público ou particular
+157,GM,Empresa Municipal de Vigilância,Monitorar possíveis interdições,21,Evento em local público ou particular
+158,GM,Empresa Municipal de Vigilância,Organizar o trânsito,21,Evento em local público ou particular
+159,PM,Polícia Militar,Manter a ordem pública,21,Evento em local público ou particular
+160,SUBPREFEITURA,Subprefeitura,Comunicar,21,Evento em local público ou particular
+161,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,17,Falta de luz / Apagão
+162,Light,Light Serviços de Eletricidade S.A.,Restabelecer fornecimento de energia,17,Falta de luz / Apagão
+163,CET-RIO,Companhia de Engenharia de Tráfego,Atualizar painéis informativos,18,Implosão
+164,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,18,Implosão
+165,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,18,Implosão
+166,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,18,Implosão
+167,Light,Light Serviços de Eletricidade S.A.,Restabelecer fornecimento de energia,18,Implosão
+168,Telefonia,Empresa de telefonia,Restabelecer serviço,18,Implosão
+169,DefesaCivil,Secretaria Municipal de Defesa Civil,Planejar e coordenar implosão,18,Implosão
+170,CEG,CEG Rio de Janeiro,Restabelecer serviço,18,Implosão
+171,SUBPREFEITURA,Subprefeitura,Comunicar,18,Implosão
+172,CET-RIO,Companhia de Engenharia de Tráfego,Desfazer o acidente,15,Incêndio dentro de túneis
+173,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,15,Incêndio dentro de túneis
+174,BOMBEIROS,Corpo de Bombeiros,Atender vítima(s),15,Incêndio dentro de túneis
+175,BOMBEIROS,Corpo de Bombeiros,Controlar incêndio,15,Incêndio dentro de túneis
+176,Light,Light Serviços de Eletricidade S.A.,Desligar energia,15,Incêndio dentro de túneis
+177,RioLuz,Companhia Municipal de Energia e Iluminação,Desligar energia,15,Incêndio dentro de túneis
+178,SMS,Secretaria Municipal de Saúde,Regular leito(s),15,Incêndio dentro de túneis
+179,SMASDH,Secretaria Municipal de Assistência Social e Direitos Humanos,Apoiar Vítimas,15,Incêndio dentro de túneis
+180,DefesaCivil,Secretaria Municipal de Defesa Civil,Informar necessidade de acionar GEORIO,15,Incêndio dentro de túneis
+181,DefesaCivil,Secretaria Municipal de Defesa Civil,Vistoriar local,15,Incêndio dentro de túneis
+182,SUBPREFEITURA,Subprefeitura,Comunicar,15,Incêndio dentro de túneis
+183,CET-RIO,Companhia de Engenharia de Tráfego,Monitorar possíveis interdições,8,Incêndio em imóvel
+184,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,8,Incêndio em imóvel
+185,COMLURB,Companhia de Limpeza Urbana,Rescaldo,8,Incêndio em imóvel
+186,BOMBEIROS,Corpo de Bombeiros,Atender vítima(s),8,Incêndio em imóvel
+187,BOMBEIROS,Corpo de Bombeiros,Controlar incêndio,8,Incêndio em imóvel
+188,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,8,Incêndio em imóvel
+189,BOMBEIROS,Corpo de Bombeiros,Recolher vítima(s) fatal(is),8,Incêndio em imóvel
+190,BOMBEIROS,Corpo de Bombeiros,Resgatar pessoas,8,Incêndio em imóvel
+191,DefesaCivil,Secretaria Municipal de Defesa Civil,Informar necessidade de acionar GEORIO,8,Incêndio em imóvel
+192,DefesaCivil,Secretaria Municipal de Defesa Civil,Vistoriar local,8,Incêndio em imóvel
+193,PortoNovo,Porto Novo S.A.,Organizar o trânsito,8,Incêndio em imóvel
+194,SUBPREFEITURA,Subprefeitura,Comunicar,8,Incêndio em imóvel
+195,CET-RIO,Companhia de Engenharia de Tráfego,Monitorar possíveis interdições,39,Incendio em vegetacao
+196,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,39,Incendio em vegetacao
+197,BOMBEIROS,Corpo de Bombeiros,Atender vítima(s),39,Incendio em vegetacao
+198,BOMBEIROS,Corpo de Bombeiros,Controlar incêndio,39,Incendio em vegetacao
+199,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,39,Incendio em vegetacao
+200,BOMBEIROS,Corpo de Bombeiros,Recolher vítima(s) fatal(is),39,Incendio em vegetacao
+201,BOMBEIROS,Corpo de Bombeiros,Resgatar pessoas,39,Incendio em vegetacao
+202,DefesaCivil,Secretaria Municipal de Defesa Civil,Vistoriar local,39,Incendio em vegetacao
+203,SUBPREFEITURA,Subprefeitura,Comunicar,39,Incendio em vegetacao
+204,CET-RIO,Companhia de Engenharia de Tráfego,Desfazer o acidente,4,Incêndio em veículo(s)
+205,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,4,Incêndio em veículo(s)
+206,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,4,Incêndio em veículo(s)
+207,GM,Empresa Municipal de Vigilância,Desfazer o acidente,4,Incêndio em veículo(s)
+208,GM,Empresa Municipal de Vigilância,Organizar o trânsito,4,Incêndio em veículo(s)
+209,BOMBEIROS,Corpo de Bombeiros,Controlar incêndio,4,Incêndio em veículo(s)
+210,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,4,Incêndio em veículo(s)
+211,PortoNovo,Porto Novo S.A.,Desfazer o acidente,4,Incêndio em veículo(s)
+212,PortoNovo,Porto Novo S.A.,Organizar o trânsito,4,Incêndio em veículo(s)
+213,LAMSA,Linha Amarela S.A.,Desfazer o acidente,4,Incêndio em veículo(s)
+214,LAMSA,Linha Amarela S.A.,Organizar o trânsito,4,Incêndio em veículo(s)
+215,SUBPREFEITURA,Subprefeitura,Comunicar,4,Incêndio em veículo(s)
+216,CET-RIO,Companhia de Engenharia de Tráfego,Monitorar possíveis interdições,14,Incêndio no entorno de vias públicas
+217,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,14,Incêndio no entorno de vias públicas
+218,BOMBEIROS,Corpo de Bombeiros,Controlar incêndio,14,Incêndio no entorno de vias públicas
+219,SUBPREFEITURA,Subprefeitura,Comunicar,14,Incêndio no entorno de vias públicas
+220,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,33,Lâmina d'água
+221,COMLURB,Companhia de Limpeza Urbana,Desobstruir ralos e bueiros,33,Lâmina d'água
+222,GM,Empresa Municipal de Vigilância,Organizar o trânsito,33,Lâmina d'água
+223,SECONSERVA,Secretaria Municipal de Conservação,Drenar água,33,Lâmina d'água
+224,PortoNovo,Porto Novo S.A.,Organizar o trânsito,33,Lâmina d'água
+225,LAMSA,Linha Amarela S.A.,Organizar o trânsito,33,Lâmina d'água
+226,SUBPREFEITURA,Subprefeitura,Comunicar,33,Lâmina d'água
+227,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,7,Manifestação em local público
+228,GM,Empresa Municipal de Vigilância,Monitorar possíveis interdições,7,Manifestação em local público
+229,PM,Polícia Militar,Manter a ordem pública,7,Manifestação em local público
+230,CICC,Centro Integrado de Comando e Controle,Manter a ordem pública,7,Manifestação em local público
+231,SUBPREFEITURA,Subprefeitura,Comunicar,7,Manifestação em local público
+232,CET-RIO,Companhia de Engenharia de Tráfego,Monitorar possíveis interdições,25,Obra em local público
+233,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,25,Obra em local público
+234,SECONSERVA,Secretaria Municipal de Conservação,Corrigir pavimentação,25,Obra em local público
+235,PortoNovo,Porto Novo S.A.,Monitorar possíveis interdições,25,Obra em local público
+236,PortoNovo,Porto Novo S.A.,Organizar o trânsito,25,Obra em local público
+237,PM,Polícia Militar,Realizar averiguações,26,Operação policial
+238,Policia Civil,Polícia Civil,Realizar averiguações,26,Operação policial
+239,DETRO,Departamento de Transportes Rodoviários do Estado do Rio de Janeiro,Realizar averiguações,26,Operação policial
+240,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,11,Queda de árvore
+241,COMLURB,Companhia de Limpeza Urbana,Cortar e retirar árvore,11,Queda de árvore
+242,COMLURB,Companhia de Limpeza Urbana,Limpar Via,11,Queda de árvore
+243,GM,Empresa Municipal de Vigilância,Organizar o trânsito,11,Queda de árvore
+244,BOMBEIROS,Corpo de Bombeiros,Cortar árvore,11,Queda de árvore
+245,Light,Light Serviços de Eletricidade S.A.,Desligar energia,11,Queda de árvore
+246,Light,Light Serviços de Eletricidade S.A.,Restabelecer fornecimento de energia,11,Queda de árvore
+247,RioLuz,Companhia Municipal de Energia e Iluminação,Desligar energia,11,Queda de árvore
+248,RioLuz,Companhia Municipal de Energia e Iluminação,Restabelecer fornecimento de energia,11,Queda de árvore
+249,Telefonia,Empresa de telefonia,Restabelecer serviço,11,Queda de árvore
+250,Telefonia,Empresa de telefonia,Retirar fios,11,Queda de árvore
+251,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,40,Queda de árvore sobre fiação
+252,COMLURB,Companhia de Limpeza Urbana,Cortar e retirar árvore,40,Queda de árvore sobre fiação
+253,COMLURB,Companhia de Limpeza Urbana,Limpar Via,40,Queda de árvore sobre fiação
+254,GM,Empresa Municipal de Vigilância,Organizar o trânsito,40,Queda de árvore sobre fiação
+255,BOMBEIROS,Corpo de Bombeiros,Cortar árvore,40,Queda de árvore sobre fiação
+256,Light,Light Serviços de Eletricidade S.A.,Desligar energia,40,Queda de árvore sobre fiação
+257,Light,Light Serviços de Eletricidade S.A.,Restabelecer fornecimento de energia,40,Queda de árvore sobre fiação
+258,RioLuz,Companhia Municipal de Energia e Iluminação,Desligar energia,40,Queda de árvore sobre fiação
+259,RioLuz,Companhia Municipal de Energia e Iluminação,Restabelecer fornecimento de energia,40,Queda de árvore sobre fiação
+260,Telefonia,Empresa de telefonia,Restabelecer serviço,40,Queda de árvore sobre fiação
+261,Telefonia,Empresa de telefonia,Retirar fios,40,Queda de árvore sobre fiação
+262,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,19,Queda de estrutura de alvenaria
+263,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,19,Queda de estrutura de alvenaria
+264,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,19,Queda de estrutura de alvenaria
+265,BOMBEIROS,Corpo de Bombeiros,Resgatar pessoas,19,Queda de estrutura de alvenaria
+266,Policia Civil,Polícia Civil,Realizar perícia,19,Queda de estrutura de alvenaria
+267,SMS,Secretaria Municipal de Saúde,Regular leito(s),19,Queda de estrutura de alvenaria
+268,DefesaCivil,Secretaria Municipal de Defesa Civil,Informar necessidade de acionar GEORIO,19,Queda de estrutura de alvenaria
+269,DefesaCivil,Secretaria Municipal de Defesa Civil,Vistoriar local,19,Queda de estrutura de alvenaria
+270,SUBPREFEITURA,Subprefeitura,Comunicar,19,Queda de estrutura de alvenaria
+271,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,12,Queda de poste
+272,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,12,Queda de poste
+273,Light,Light Serviços de Eletricidade S.A.,Desligar energia,12,Queda de poste
+274,Light,Light Serviços de Eletricidade S.A.,Restabelecer fornecimento de energia,12,Queda de poste
+275,Light,Light Serviços de Eletricidade S.A.,Retirar poste da via,12,Queda de poste
+276,RioLuz,Companhia Municipal de Energia e Iluminação,Desligar energia,12,Queda de poste
+277,RioLuz,Companhia Municipal de Energia e Iluminação,Restabelecer fornecimento de energia,12,Queda de poste
+278,RioLuz,Companhia Municipal de Energia e Iluminação,Retirar poste da via,12,Queda de poste
+279,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,10,Reintegração de Posse
+280,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,10,Reintegração de Posse
+281,GM,Empresa Municipal de Vigilância,Organizar o trânsito,10,Reintegração de Posse
+282,BOMBEIROS,Corpo de Bombeiros,Controlar incêndio,10,Reintegração de Posse
+283,PM,Polícia Militar,Manter a ordem pública,10,Reintegração de Posse
+284,SMASDH,Secretaria Municipal de Assistência Social e Direitos Humanos,Abrigar pessoas,10,Reintegração de Posse
+285,SUBPREFEITURA,Subprefeitura,Comunicar,10,Reintegração de Posse
+286,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,37,Remoção de Animais Mortos na Areia
+287,GM,Empresa Municipal de Vigilância,Dar apoio,37,Remoção de Animais Mortos na Areia
+288,GM,Empresa Municipal de Vigilância,Organizar o trânsito,37,Remoção de Animais Mortos na Areia
+289,INEA,Instituto Estadual do Ambiente,Dar apoio,37,Remoção de Animais Mortos na Areia
+290,SMAC,Secretaria Municipal de Meio Ambiente,Dar apoio,37,Remoção de Animais Mortos na Areia
+291,SUBPREFEITURA,Subprefeitura,Comunicar,37,Remoção de Animais Mortos na Areia
+292,BOMBEIROS,Corpo de Bombeiros,Resgatar animal,38,Resgate de Animal Marinho Preso em rede / Encalhado
+293,INEA,Instituto Estadual do Ambiente,Vistoriar e informar MAQUA,38,Resgate de Animal Marinho Preso em rede / Encalhado
+294,CICC,Centro Integrado de Comando e Controle,Dar apoio,38,Resgate de Animal Marinho Preso em rede / Encalhado
+295,SMAC,Secretaria Municipal de Meio Ambiente,Dar apoio,38,Resgate de Animal Marinho Preso em rede / Encalhado
+296,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,36,Resgate ou remoção de Animais Terrestres e Aéreos
+297,COMLURB,Companhia de Limpeza Urbana,Resgatar animal,36,Resgate ou remoção de Animais Terrestres e Aéreos
+298,SMAC,Secretaria Municipal de Meio Ambiente,Resgatar animal silvestre (PATRULHA AMBIENTAL),36,Resgate ou remoção de Animais Terrestres e Aéreos
+299,SUBEM,Subsecretaria de Bem Estar Animal,Resgatar animal doméstico (doente ou agressivo),36,Resgate ou remoção de Animais Terrestres e Aéreos
+300,ZOONOSES,Centro de Controle de Zoonoses,Remover morcego (ZOONOSES),36,Resgate ou remoção de Animais Terrestres e Aéreos
+301,ZOONOSES,Centro de Controle de Zoonoses,"Resgatar animal ferido, agressor ou de grande porte (ZOONOSES)",36,Resgate ou remoção de Animais Terrestres e Aéreos
+302,ZOONOSES,Centro de Controle de Zoonoses,Resgatar animal venenoso (ZOONOSES),36,Resgate ou remoção de Animais Terrestres e Aéreos
+303,CET-RIO,Companhia de Engenharia de Tráfego,Enviar equipe de manutenção,9,Sinais de trânsito com mau funcionamento
+304,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,9,Sinais de trânsito com mau funcionamento
+305,Light,Light Serviços de Eletricidade S.A.,Restabelecer fornecimento de energia,9,Sinais de trânsito com mau funcionamento
+306,RioLuz,Companhia Municipal de Energia e Iluminação,Restabelecer fornecimento de energia,9,Sinais de trânsito com mau funcionamento
+307,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,16,Vazamento de água / esgoto
+308,COMLURB,Companhia de Limpeza Urbana,Fazer limpeza do local,16,Vazamento de água / esgoto
+309,CEDAE,Companhia Estadual de Águas e Esgotos,Consertar vazamento de água,16,Vazamento de água / esgoto
+310,CEDAE,Companhia Estadual de Águas e Esgotos,Consertar vazamento de esgoto ,16,Vazamento de água / esgoto
+311,Zona Oeste Mais,Zona Oeste Mais,Consertar vazamento de esgoto,16,Vazamento de água / esgoto
+312,AEGEA,AEGEA,Consertar vazamento de esgoto,16,Vazamento de água / esgoto
+313,CET-RIO,Companhia de Engenharia de Tráfego,Organizar o trânsito,20,Vazamento de gás
+314,BOMBEIROS,Corpo de Bombeiros,Prevenir perigo,20,Vazamento de gás
+315,Light,Light Serviços de Eletricidade S.A.,Desligar energia,20,Vazamento de gás
+316,Light,Light Serviços de Eletricidade S.A.,Restabelecer fornecimento de energia,20,Vazamento de gás
+317,CEG,CEG Rio de Janeiro,Restabelecer serviço,20,Vazamento de gás
+318,PortoNovo,Porto Novo S.A.,Organizar o trânsito,20,Vazamento de gás

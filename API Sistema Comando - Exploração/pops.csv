@@ -1,0 +1,41 @@
+,titulo,id
+0,Abalroamento,24
+1,Acidente ambiental,34
+2,Acidente com queda de carga,13
+3,Acidente com vítima(s),2
+4,Acidente com vítima(s) fatal(is),3
+5,Acidente/enguiço sem vítima,1
+6,Acionamento de sirenes,30
+7,Afundamento de Pista / Buraco na via,23
+8,Alagamento,31
+9,Alagamentos e enchentes,6
+10,Animal em local público,29
+11,Atropelamento,22
+12,Bloco de Rua,27
+13,Bolsão d'água em via,5
+14,Bueiro,35
+15,Deslizamento,28
+16,Enchente,32
+17,Evento em local público ou particular,21
+18,Falta de luz / Apagão,17
+19,Implosão,18
+20,Incêndio dentro de túneis,15
+21,Incêndio em imóvel,8
+22,Incendio em vegetacao,39
+23,Incêndio em veículo(s),4
+24,Incêndio no entorno de vias públicas,14
+25,Lâmina d'água,33
+26,Manifestação em local público,7
+27,Obra em local público,25
+28,Operação policial,26
+29,Queda de árvore,11
+30,Queda de árvore sobre fiação,40
+31,Queda de estrutura de alvenaria,19
+32,Queda de poste,12
+33,Reintegração de Posse,10
+34,Remoção de Animais Mortos na Areia,37
+35,Resgate de Animal Marinho Preso em rede / Encalhado,38
+36,Resgate ou remoção de Animais Terrestres e Aéreos,36
+37,Sinais de trânsito com mau funcionamento,9
+38,Vazamento de água / esgoto,16
+39,Vazamento de gás,20
