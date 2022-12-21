@@ -8,14 +8,11 @@ def save_json(obj, path):
     print('Done!')
 
 def points_geojson(df, coords=['EVENTO_LONGITUDE', 'EVENTO_LATITUDE']):
-
     points_json = {
         "type": "FeatureCollection",
         "features": []
     }
-
-    for row in df.iterrows():
-        row = row[1]
+    for idx, row in df.iterrows():
         points_json['features'].append({
             'type': 'Feature',
             'geometry': {
@@ -26,26 +23,44 @@ def points_geojson(df, coords=['EVENTO_LONGITUDE', 'EVENTO_LATITUDE']):
         })
     return points_json
 
-def polygon_geojson(df, coords=['lng_min', 'lng_max', 'lat_min', 'lat_max']):
+def linestring_geojson(df, coords='line', keys=['x', 'y']):
+    x, y = keys
+    line_json = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    for idx, row in df.iterrows():
+        line = row[coords]
+        coordinates = ([[point[x], point[y]] for point in line] if keys is not None else line)
+        line_json['features'].append({
+            'type': 'Feature',
+            'geometry': {
+                'type': 'LineString',
+                'coordinates': coordinates,
+            },
+            'properties': row.drop(coords).to_dict()
+        })
+    return line_json
 
+
+def polygon_geojson(df, coords=['lng_min', 'lng_max', 'lat_min', 'lat_max'], drop=[]):
     polygon_json = {
         "type": "FeatureCollection",
         "features": []
     }
-
-    for row in df.iterrows():
-        row = row[1]
-        polygon_json['features'].append({
-            'type': 'Feature',
-            'geometry': {
-                'type': 'Polygon',
-                'coordinates': [[
+    for idx, row in df.iterrows():
+        coordinates = ([[
                     [row[coords[0]], row[coords[2]]],
                     [row[coords[0]], row[coords[3]]],
                     [row[coords[1]], row[coords[3]]],
                     [row[coords[1]], row[coords[2]]],
                     [row[coords[0]], row[coords[2]]],
-                ]],
+                ]] if type(coords) is not str else row[coords])
+        polygon_json['features'].append({
+            'type': 'Feature',
+            'geometry': {
+                'type': 'Polygon',
+                'coordinates': coordinates,
             },
             'properties': row.drop(coords).to_dict()
         })
