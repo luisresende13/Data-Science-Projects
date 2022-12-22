@@ -110,8 +110,7 @@ def polygon_geojson(df, coords=['lng_min', 'lng_max', 'lat_min', 'lat_max']):
         "type": "FeatureCollection",
         "features": []
     }
-    for row in df.iterrows():
-        row = row[1]
+    for idx, row in df.iterrows():
         polygon_json['features'].append({
             'type': 'Feature',
             'geometry': {
