@@ -1,0 +1,10 @@
+sigla_uf,id_municipio,id_estacao,estacao,latitude,longitude,data_inicio_operacao,data_fim_operacao,situacao,tipo_estacao,entidade_responsavel,data_atualizacao
+RJ,3304557,A654,Jacarepagua,-22.986979,-43.370102,,,,,,
+RJ,3304557,A656,Maracanã,-22.91111111,-43.22722221,,,,,,
+RJ,3304557,A655,Engenho de dentro,-22.89472222,-43.29138889,,,,,,
+RJ,3304557,A651,Escola naval,-22.91472222,-43.15944444,,,,,,
+RJ,3304557,A653,Lagoa r.de freitas,-22.97416667,-43.21777778,,,,,,
+RJ,3304557,A602,Marambaia,-23.05027777,-43.59555555,2002-11-08,,Operante,Automatica,INMET,
+RJ,3304557,A621,Vila militar,-22.86138888,-43.41138888,2007-04-13,,Operante,Automatica,INMET,
+RJ,3304557,A652,Forte de copacabana,-22.98833333,-43.19055555,2007-05-18,,Operante,Automatica,INMET,
+RJ,3304557,A636,Jacarepagua,-22.93999999,-43.40277777,2017-08-10,,Operante,Automatica,INMET,
