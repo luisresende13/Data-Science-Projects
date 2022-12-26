@@ -55,7 +55,7 @@ def feature_obj(geometry):
         'geometry': geometry
     }
 
-def add_props(features, df):
+def overwrite_props(features, df):
     for feat, (idx, row) in zip(features, df.iterrows()):
         feat['properties'] = row.to_dict()
     return features
@@ -66,7 +66,7 @@ def add_props(features, df):
 def wkt_geojson(df, wkt_col, props):
     geometries = df[wkt_col].apply(wkt.loads)
     features = geometries.apply(feature_obj)
-    features = add_props(features.tolist(), df[props])
+    features = overwrite_props(features.tolist(), df[props])
     return geojson_obj(features)
 
 # ---
