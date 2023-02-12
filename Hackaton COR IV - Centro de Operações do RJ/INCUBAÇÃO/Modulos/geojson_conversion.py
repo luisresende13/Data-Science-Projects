@@ -94,34 +94,45 @@ def linestring_geojson(df, coords='line', keys=['x', 'y']):
         "type": "FeatureCollection",
         "features": []
     }
-    for idx, row in df.iterrows():
-        line_json['features'].append({
-            'type': 'Feature',
-            'geometry': {
-                'type': 'LineString',
-                'coordinates': [[point[x], point[y]] for point in row[coords]],
-            },
-            'properties': row.drop(coords).to_dict()
-        })
+    if len(df):
+        for idx, row in df.iterrows():
+            line_json['features'].append({
+                'type': 'Feature',
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': [[point[x], point[y]] for point in row[coords]],
+                },
+                'properties': row.drop(coords).to_dict()
+            })
     return line_json
 
-def polygon_geojson(df, coords=['lng_min', 'lng_max', 'lat_min', 'lat_max']):
+def polygons_to_df(geojson):
+    df = []
+    for feat in geojson['features']:
+        df.append({**feat['properties'], 'coordinates': feat['geometry']['coordinates']})
+    return pd.DataFrame(df)
+
+def polygon_geojson(df, geometry_type='Polygon', coords=['lng_min', 'lng_max', 'lat_min', 'lat_max']):
     polygon_json = {
         "type": "FeatureCollection",
         "features": []
     }
     for idx, row in df.iterrows():
+        if type(coords) is str:
+            coordinates = row[coords]
+        elif type(coords) is list:
+            coordinates = [[
+                [row[coords[0]], row[coords[2]]],
+                [row[coords[0]], row[coords[3]]],
+                [row[coords[1]], row[coords[3]]],
+                [row[coords[1]], row[coords[2]]],
+                [row[coords[0]], row[coords[2]]],
+            ]]
         polygon_json['features'].append({
             'type': 'Feature',
             'geometry': {
-                'type': 'Polygon',
-                'coordinates': [[
-                    [row[coords[0]], row[coords[2]]],
-                    [row[coords[0]], row[coords[3]]],
-                    [row[coords[1]], row[coords[3]]],
-                    [row[coords[1]], row[coords[2]]],
-                    [row[coords[0]], row[coords[2]]],
-                ]],
+                'type': geometry_type,
+                'coordinates': coordinates,
             },
             'properties': row.drop(coords).to_dict()
         })
