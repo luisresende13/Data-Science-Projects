@@ -2,6 +2,7 @@ import cv2 as cv
 from google.cloud import storage
 import os
 from tempfile import NamedTemporaryFile
+from IPython.display import clear_output as co
 
 class GCS:
     '''
@@ -26,13 +27,13 @@ class GCS:
     def get_blob(self, blob_name:str, bucket_name:str):
         return self.storage_client.get_bucket(bucket_name).blob(blob_name)
 
-    def list_blobs(self, bucket_name:str, folder:str=""):
-        return [blob.name for blob in self.get_bucket(bucket_name).list_blobs(prefix=folder)]
+    def list_blobs(self, bucket_name:str, prefix:str="", delimiter:str='/'):
+        return [blob.name for blob in self.get_bucket(bucket_name).list_blobs(prefix=prefix, delimiter=delimiter)]
     
     def is_blob_in_bucket(self, blob_name:str, bucket_name:str) -> bool:
         return blob_name in self.list_blobs(bucket_name) # CHANGED
     
-    def get_folder(self, bucket_name:str, folder_path:str):
+    def get_folder(self, bucket_name:str, folder_path:str): # REMOVE. EQUAL TO LIST_BLOBS
         return self.storage_client.get_bucket(bucket_name).list_blobs(prefix=folder_path)
 
     def upload_from_filename(self, filename:str, blob_name:str, bucket_name:str, content_type:str="image/jpeg"): # CHANGED
@@ -44,9 +45,19 @@ class GCS:
             cv.imwrite(tname, file)
             self.upload_from_filename(tname, blob_name, bucket_name, content_type)
 
-    def download_to_filename(self, filename, blob_name, bucket_name): # NEW
+    def download_to_filename(self, filename:str, blob_name:str, bucket_name:str): # NEW
         return self.get_blob(blob_name, bucket_name).download_to_filename(filename)
 
+    def download_to_folder(self, folder:str, bucket_name:str, prefix:str, delimiter:str): # NEW
+        if not folder.endswith('/'):  folder += '/'
+        blobs = [blob_name for blob_name in self.list_blobs(bucket_name, prefix, delimiter) if not blob_name.endswith('/')]
+        for i, blob_name in enumerate(blobs):
+            co(True); print(f'Files downloaded to {folder}: {i}/{len(blobs)}')
+            filepath = f'{folder}{blob_name}'.replace(':', '-')
+            path = '/'.join(filepath.split('/')[:-1])
+            if not os.path.exists(path): os.makedirs(path)
+            self.download_to_filename(filepath, blob_name, bucket_name)
+        
     def download_from_bucket(self, blob_name:str, download_path:str, bucket_name:str, in_memory:bool=True):
         '''
         params - 
