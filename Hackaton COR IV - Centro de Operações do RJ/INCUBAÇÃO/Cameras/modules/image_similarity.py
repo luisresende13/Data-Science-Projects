@@ -1,4 +1,3 @@
-from modules.histogram import is_histogram_clustered, histogram_max_prct
 import cv2, pathlib, numpy as np, pandas as pd
 from IPython.display import clear_output as co
 
@@ -35,10 +34,6 @@ class similarity_classifier:
         self.nbases = len(baseimgs)
         self.baseimgs = [cv2.imread(path) for path in baseimgs]
         self.baseids = baseimgs
-        self.histogram_max_prct = histogram_max_prct
-        self.is_histogram_clustered = is_histogram_clustered
-        self.histogram_max_prct = histogram_max_prct
-        self.is_histogram_clustered = is_histogram_clustered
     
     def predict_any(self, image):
         if type(image) is list: return list(map(self.predict_any, image))

@@ -1,42 +1,37 @@
+# Import modules
+
 from datetime import datetime as dt
 import pytz; tzbr = pytz.timezone('Brazil/East')
 from modules.googlecloudstorage import GCS
 from tempfile import NamedTemporaryFile
 import cv2, multiprocessing, numpy as np
 from modules.image_similarity import similarity_classifier
+from modules.histogram import HistogramClassifier
 
 def now(fmt="%Y-%m-%d %H-%M-%S"):
     return dt.now(tzbr).strftime(fmt)
 
-# google cloud storage params
-
-gcs = GCS('../../../../Apps/Python/bolsao-api/credentials/pluvia-360323-35cd376d5958.json') # YOUR GOOGLE CLOUD SERVICE ACCOUNT JSON FILE PATH
-bucket_name = 'city-camera-images' # YOUR GOOGLE CLOUD STORAGE BUCKET NAME
-
-# Skip invalid frames params
+# Skip invalid frames settings
 
 baseimgs = ['Gabaritos/cam.jpg', 'Gabaritos/dark.jpg']
 
 p = 0.05
-clf = similarity_classifier(baseimgs, p)
+clf_diff = similarity_classifier(baseimgs, p)
 
-skip_methods= {
-    'histogram': clf.is_histogram_clustered,
-    'avg_prct_diff': clf.predict_any
+threshold=0.6
+clf_hist = HistogramClassifier(threshold)
+
+skip_methods = {
+    'avg_prct_diff': clf_diff.predict_any,
+    'histogram': clf_hist.is_histogram_clustered
 }
 
-# File handling methods
+# Google cloud storage
 
-def upload_frames(frames, path):
-    for filename, frame in frames:
-        blob_name = f'{path}/{filename}.jpg'
-        gcs.upload_from_file(frame, blob_name, bucket_name, 'image/jpeg')
+gcs = GCS('../../../../Apps/Python/bolsao-api/credentials/pluvia-360323-35cd376d5958.json') # YOUR GOOGLE CLOUD SERVICE ACCOUNT JSON FILE PATH
+bucket_name = 'city-camera-images' # YOUR GOOGLE CLOUD STORAGE BUCKET NAME
 
-def upload_video(frames, blob_name):
-    with NamedTemporaryFile() as temp:
-        tname = f"{temp.name}.mp4"
-        write_video(frames, tname, fps=3, codec='mp4v')
-        gcs.upload_from_filename(tname, blob_name, bucket_name, 'video/mp4')
+# File and storage handling methods
 
 def write_video(frames, path, shape='auto', fps=3, codec='mp4v'):
     if shape == 'auto': height, width, _ = frames[0].shape; shape = (width, height) 
@@ -44,7 +39,20 @@ def write_video(frames, path, shape='auto', fps=3, codec='mp4v'):
     writer = cv2.VideoWriter(path, fourcc, fps, shape)
     for frame in frames: writer.write(frame)
     cv2.destroyAllWindows(); writer.release()
-    
+
+def upload_video(frames, blob_name):
+    with NamedTemporaryFile() as temp:
+        tname = f"{temp.name}.mp4"
+        write_video(frames, tname, fps=3, codec='mp4v')
+        gcs.upload_from_filename(tname, blob_name, bucket_name, 'video/mp4')
+
+def upload_frames(frames, path):
+    for filename, frame in frames:
+        blob_name = f'{path}/{filename}.jpg'
+        gcs.upload_from_file(frame, blob_name, bucket_name, 'image/jpeg')
+
+# City camera video recorder class
+        
 class recorder:
 
     url = 'http://187.111.99.18:9004/?CODE={}'
@@ -73,14 +81,14 @@ class recorder:
         while(True):
             cap, frame = self.capture_frame(cap, url)
             if frame is None:
-                print(f'CONNECTION LOST. CODE {code}. MAX RETRIES ({self.retries}) EXCEEDED.')
+                print(f'CONNECTION LOST. CODE {code}. MAX RETRIES ({self.retries}) EXCEEDED. AT {now("%Y-%m-%d %X")}.')
                 break
             if self.skip_method is not None:
                 if self.is_frame_invalid(frame):
                     skipped +=1
                     if self.skip_max is not None:
                         if skipped == self.skip_max:
-                            print(f'CAPTURE STOPPED. CODE {code}. MAX SKIPPED FRAMES ({self.skip_max}) EXCEEDED.')
+                            print(f'CAPTURE STOPPED. CODE {code}. MAX SKIPPED FRAMES ({self.skip_max}) EXCEEDED. AT {now("%Y-%m-%d %X")}.')
                             break
                     continue
             filename = f'CODE{code} {now("%Y-%m-%d %H-%M-%S-%f")[:-5]}'  # [:-5] keeps only the first microsecond decimal
