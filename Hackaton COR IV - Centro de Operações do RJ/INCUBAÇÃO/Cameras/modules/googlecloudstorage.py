@@ -49,20 +49,6 @@ class GCS:
             return True
         except: return False
 
-    def upload_from_blob_name(
-        self, blob_name:str, bucket_name:str=None,
-        to_blob_name:str, to_bucket_name:str,
-        content_type:str="image/jpeg", overwrite:bool=False
-    ):
-        if not overwrite and self.is_blob_in_bucket(to_blob_name, to_bucket_name):
-            print(f'UPLOAD FAILED. BLOB ALREADY EXISTS. BLOB: {blob_name} · TO-BLOB: {to_blob_name} · TO-BUCKET: {to_bucket_name}')
-            return False
-        try:
-            blob = self.get_blob(blob_name, bucket_name)
-            blob.upload_from_filename(filename, content_type)
-            return True
-        except: return False
-
     def upload_from_file(self, file, blob_name:str, bucket_name:str=None, content_type:str="image/jpeg"): # CHANGED
         with NamedTemporaryFile() as temp:
             tname = "".join([str(temp.name),".jpg"])
