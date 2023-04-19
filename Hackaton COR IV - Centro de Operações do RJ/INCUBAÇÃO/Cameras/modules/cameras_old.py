@@ -1,8 +1,8 @@
 import pandas as pd, requests
 
-class cameras:
+class Trigger:
 
-    api_root = 'https://bolsao-api-j2fefywbia-rj.a.run.app'
+    api_root = 'https://api.octacity.dev'
 
     def __init__(self, src, monitor, logic='any', merge=False):
         self.src = src
