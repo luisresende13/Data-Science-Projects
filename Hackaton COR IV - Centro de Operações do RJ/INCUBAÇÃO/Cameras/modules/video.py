@@ -52,7 +52,7 @@ class VideoWriter:
         cap.release(); video.release(); cv2.destroyAllWindows()
         return True
     
-    def annot_folder_nested(self, folder, to_folder, ext='.mp4', overwrite=True):
+    def annot_folder_nested(self, folder, to_folder, ext='.mp4', overwrite=True, report_freq=10):
         if folder.endswith('/'): folder = folder[:-1]
         folder_depth = len(folder.split('/'))
         paths = []
@@ -67,7 +67,8 @@ class VideoWriter:
         n = len(paths)
         for i, subpath in enumerate(paths):
             if self.annot(folder, subpath, to_folder, overwrite): success += 1
-            co(True); print(f'VIDEO TIMESTAMP ANNOTATION · DONE: {i + 1}/{n} · SUCCESS: {success}/{n}')
+            if report_freq is not None and (i + 1) % report_freq == 0:
+                co(True); print(f'VIDEO TIMESTAMP ANNOTATION · DONE: {i + 1}/{n} · SUCCESS: {success}/{n}')
 
     def concatenate_videos_from_folder(self, folder, path, ext:str='.mp4', overwrite=True):
         """
@@ -98,7 +99,7 @@ class VideoWriter:
         
     def concatenate_videos_from_nested_folders_by_date(
         self, base_folder:str, to_base_folder:str,
-        ext:str='.mp4', overwrite:bool=True
+        ext:str='.mp4', overwrite:bool=True, report_freq=10
     ):
         folders = inner_subdirs(base_folder, ext)
         success = 0
@@ -106,7 +107,8 @@ class VideoWriter:
         for i, folder in enumerate(folders):
             if self.concatenate_videos_from_folder_by_date(folder, base_folder, to_base_folder, ext, overwrite):
                 success += 1
-            co(True); print(f'CONCAT VIDEOS BY DATE FROM NESTED FOLDERS · DONE: {i + 1}/{n} · FOLDER: {folder}')
+            if report_freq is not None and (i + 1) % report_freq == 0:
+                co(True); print(f'CONCAT VIDEOS BY DATE FROM NESTED FOLDERS · DONE: {i + 1}/{n} · FOLDER: {folder}')
         
     def concatenate_videos_from_folder_by_date(
         self, folder:str, base_folder:str, to_base_folder:str,
