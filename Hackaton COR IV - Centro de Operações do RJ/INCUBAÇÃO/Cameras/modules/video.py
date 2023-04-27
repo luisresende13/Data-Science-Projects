@@ -12,9 +12,9 @@ def inner_subdirs(folder, ext='.mp4'):
             in_subdirs.append(subpath)
     return in_subdirs
 
-class VideoWriter:
+class VideoAnnotator:
 
-    def add_text_to_video(frame, text):
+    def add_timestamp_to_frame(frame, text):
         cv2.putText(frame, text, org=(542, 27), fontFace=cv2.FONT_HERSHEY_COMPLEX,
         fontScale=0.67, color=(0, 0, 0), thickness=2, lineType=cv2.LINE_8)
         cv2.putText(frame, text, org=(540, 25), fontFace=cv2.FONT_HERSHEY_COMPLEX,
@@ -24,7 +24,7 @@ class VideoWriter:
     def __init__(self, fps:int=3, shape:tuple=(854, 480), codec:str='mp4v'):
         self.fps = fps; self.shape = shape; self.codec = codec
 
-    def annot(self, folder, path, to_folder, overwrite=True):
+    def write_timestamp_to_videos(self, folder, path, to_folder, overwrite=True):
         """
         folder: folder relative to current absolute path containing `path` to video file
         path: path relative to `folder` to video file containing a timestamp in file name in the format: `XXXX %Y-%m-%d %H-%M-%S.mp4`
@@ -46,13 +46,14 @@ class VideoWriter:
             r, frame = cap.read()
             if not r:
                 break
-            frame = VideoWriter.add_text_to_video(frame, timestamp.strftime('OCTA %d/%m/%Y %H:%M:%S'))
+            frame = VideoAnnotator.add_timestamp_to_frame(frame, timestamp.strftime('OCTA %d/%m/%Y %H:%M:%S'))
             timestamp += offset
             video.write(frame)
         cap.release(); video.release(); cv2.destroyAllWindows()
         return True
     
-    def annot_folder_nested(self, folder, to_folder, ext='.mp4', overwrite=True, report_freq=10):
+    def write_timestamp_to_nested_videos(self, folder, to_folder, ext='.mp4', overwrite=True, report_freq=10):
+        "Annotates timestamps in all videos found matching the `ext` extesion inside all nested subdirectories inside `folder`"
         if folder.endswith('/'): folder = folder[:-1]
         folder_depth = len(folder.split('/'))
         paths = []
@@ -66,13 +67,16 @@ class VideoWriter:
         success = 0
         n = len(paths)
         for i, subpath in enumerate(paths):
-            if self.annot(folder, subpath, to_folder, overwrite): success += 1
+            if self.write_timestamp_to_videos(folder, subpath, to_folder, overwrite): success += 1
             if report_freq is not None and (i + 1) % report_freq == 0:
                 co(True); print(f'VIDEO TIMESTAMP ANNOTATION · DONE: {i + 1}/{n} · SUCCESS: {success}/{n}')
 
     def concatenate_videos_from_folder(self, folder, path, ext:str='.mp4', overwrite=True):
         """
-        folder: string with path to folder containing video files with extension `ext` 
+        prameters:
+            folder - folder containing video files matching extension `ext` to be concatenated
+            path - path to save video file generated after concatenation
+            overwrite - whether or not to overwrite file in `path`
         """
         if folder.endswith('/'): folder = folder[:-1]        
         to_full_path = f'{folder}/{path}'
@@ -97,7 +101,7 @@ class VideoWriter:
         video.release(); cv2.destroyAllWindows()
         return True
         
-    def concatenate_videos_from_nested_folders_by_date(
+    def concatenate_videos_by_date_from_nested_folders(
         self, base_folder:str, to_base_folder:str,
         ext:str='.mp4', overwrite:bool=True, report_freq=10
     ):
@@ -105,12 +109,12 @@ class VideoWriter:
         success = 0
         n = len(folders)
         for i, folder in enumerate(folders):
-            if self.concatenate_videos_from_folder_by_date(folder, base_folder, to_base_folder, ext, overwrite):
+            if self.concatenate_videos_by_date_from_folder(folder, base_folder, to_base_folder, ext, overwrite):
                 success += 1
             if report_freq is not None and (i + 1) % report_freq == 0:
                 co(True); print(f'CONCAT VIDEOS BY DATE FROM NESTED FOLDERS · DONE: {i + 1}/{n} · FOLDER: {folder}')
         
-    def concatenate_videos_from_folder_by_date(
+    def concatenate_videos_by_date_from_folder(
         self, folder:str, base_folder:str, to_base_folder:str,
         ext:str='.mp4', overwrite:bool=True
     ):
