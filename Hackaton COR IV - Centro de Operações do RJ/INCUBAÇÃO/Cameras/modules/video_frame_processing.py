@@ -6,7 +6,7 @@ from IPython.display import clear_output as co
 def timestamp_parser(path):
     file_name = path.split('/')[-1]
     stamp = ' '.join(file_name.split(' ')[1:])
-    return dt.strptime(stamp, '%Y-%m-%d %H-%M-%S.mp4')
+    return dt.strptime(stamp, '%Y-%m-%d %H-%M-%S.mp4') + pd.offsets.Second() * 0
 
 class VideoProcessor:
         
@@ -52,9 +52,9 @@ class VideoProcessor:
                 frame = np.reshape(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), -1)
             if self.frame_dimension == 2: # 2D gray scale frame
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            result = self.frame_processing_function(frame, timestamp=timestamp, metadata=video_object.to_dict())
+            frames_results.append(result)
             if self.filename_to_timestamp_function is not None:
                 timestamp += offset # frame time stamp update
-            result = self.frame_processing_function(frame, metadata=video_object.to_dict(), timestamp=timestamp)
-            frames_results.append(result)
         cap.release(); cv2.destroyAllWindows()
         return frames_results
